@@ -65,7 +65,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll
   jekyll-paginate
   jekyll-remote-theme
 
