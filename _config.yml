@@ -1,6 +1,6 @@
 name: bankole.org
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+
 
 remote_theme: chesterhow/tale
 
