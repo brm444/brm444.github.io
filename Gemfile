@@ -7,3 +7,4 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 # gem "rails"
 gem "jekyll-remote-theme"
 gem "jekyll-paginate"
+gem "jekyll-feed"
