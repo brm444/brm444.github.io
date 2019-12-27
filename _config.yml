@@ -1,11 +1,12 @@
 # Site settings
 title:          bankole.org
 description:    ""
-baseurl:        "/index.html"
+# baseurl:        "/index.html"
 url:            "https://bankole.org"
 
 # Google Analytics
-google_analytics: UA—XXXXXXXX-X
+# google_analytics: UA—XXXXXXXX-X
+
 
 # Author
 author:
@@ -31,6 +32,8 @@ plugins:
   # - jemoji #Uncomment this to allow emoji in your post
 
 # Permalinks
+#Adding remote-theme
+remote_theme:   chesterhow/tale
 permalink:      /:year-:month-:day/:title
 paginate:       5
 
