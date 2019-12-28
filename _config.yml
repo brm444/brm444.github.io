@@ -1,6 +1,6 @@
 title: bankole.org
 description: ''
-baseurl: /index.html
+# baseurl: /index.html
 url: 'https://bankole.org'
 author:
     name: 'Bankole Makanju'
