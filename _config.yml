@@ -1,21 +1,22 @@
 # Site settings
-title:          Tale
-description:    "Minimal Jekyll theme for storytellers"
-baseurl:        "/tale"
-url:            "https://chesterhow.github.io"
+title:          bankole.org
+description:    ""
+# baseurl:        "/index.html"
+url:            "https://bankole.org"
 
 # Google Analytics
-google_analytics: UA—XXXXXXXX-X
+# google_analytics: UA—XXXXXXXX-X
+
 
 # Author
 author:
-  name:         Chester How
-  url:          https://chester.how
-  email:        chesterhow@gmail.com
+  name:         Bankole Makanju
+  url:          https://bankole.org
+  email:        bmakanju@gmail.com
 
 # Build settings
 markdown:       kramdown
-include:
+# include:
   - _pages
 
 # Assets
@@ -28,9 +29,11 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
-  # - jemoji #Uncomment this to allow emoji in your post
+  - jemoji #Uncomment this to allow emoji in your post
 
 # Permalinks
+#Adding remote-theme
+remote_theme:   chesterhow/tale
 permalink:      /:year-:month-:day/:title
 paginate:       5
 
