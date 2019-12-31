@@ -1,10 +1,8 @@
 ---
 layout: post
 author: Bankole
-title: How to maiximize Africa's demographic dividend
+title: How to maximize Africa's demographic dividend
 ---
-
-# How to maximize Africa's demographic dividend
 
 From a continent seen as darn and unknowable, Africa has become a place of opportunity. Ours is a continent of young people: _there are more people under 15 in Africa than the population of Western Europe._ By 2050, Africa's population is expected to double up to 2.4 B and be home to 40% of the world's children, up from 25% today. This is evident in the "emerging middle class" narrative that has driven direct foreign investment of $54 B in 2015, despite challenges such as Ebola and falling commodity prices. How do African countries set themselves up to take advantage of their youth population? We need to give our people the skills they need to be successful.
 
