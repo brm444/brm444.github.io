@@ -23,19 +23,19 @@ I have worked in startups, management consulting, and have an MBA. Currently, I 
   method="POST"
 >
   <label>
-    Your name:
+    Name:
     <input type="name" name="name">
   </label>
   <br>
   <br>
     <label>
-    Your email:
+    Email:
     <input type="text" name="_replyto">
   </label>
   <br>
   <br>
   <label>
-    Your message:
+    Message:
     <textarea name="message"></textarea>
   </label>
 
