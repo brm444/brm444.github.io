@@ -27,10 +27,12 @@ I have worked in startups, management consulting, and have an MBA. Currently, I 
     <input type="name" name="name">
   </label>
   <br>
+  <br>
     <label>
     Your email:
     <input type="text" name="_replyto">
   </label>
+  <br>
   <br>
   <label>
     Your message:
@@ -38,9 +40,10 @@ I have worked in startups, management consulting, and have an MBA. Currently, I 
   </label>
 
   <!-- your other form fields go here -->
-
+  <br>
+  <br>
   <button type="submit">Send</button>
-<input type="hidden" name="_next" value="//path/thanks.html" />
+<input type="hidden" name="_next" value="_pages/thanks.html" />
 </form>
 
 <br>
