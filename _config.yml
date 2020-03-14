@@ -24,4 +24,4 @@ exclude:
     - Gemfile
     - Gemfile.lock
     - tale.gemspec
-disqus: jekyll-tale
+disqus: makanju-org
