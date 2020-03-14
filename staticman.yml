@@ -12,3 +12,6 @@ format: yml
 moderation: true
 name: "My blog comments"
 notifications.enabled: false
+reCaptcha.enabled: false
+reCaptcha.siteKey: ""
+reCaptcha.secret: ""
