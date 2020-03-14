@@ -17,8 +17,6 @@ I have worked in startups, management consulting, and have an MBA. Currently, I 
 </svg></a></div>
 
 <br>
-<br>
-
 
 <form
   action="https://formspree.io/mgezoeeg"
@@ -28,10 +26,12 @@ I have worked in startups, management consulting, and have an MBA. Currently, I 
     Your name:
     <input type="name" name="name">
   </label>
+  <br>
     <label>
     Your email:
     <input type="text" name="_replyto">
   </label>
+  <br>
   <label>
     Your message:
     <textarea name="message"></textarea>
@@ -40,6 +40,7 @@ I have worked in startups, management consulting, and have an MBA. Currently, I 
   <!-- your other form fields go here -->
 
   <button type="submit">Send</button>
+<input type="hidden" name="_next" value="//path/thanks.html" />
 </form>
 
 <br>
