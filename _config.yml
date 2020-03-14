@@ -24,6 +24,5 @@ exclude:
     - Gemfile
     - Gemfile.lock
     - tale.gemspec
-disqus: ""
 talkyard_server_url: https://comments-for-makanju-org.talkyard.net
 talkyard_script_url: https://c1.ty-cdn.net/-/talkyard-comments.min.js
