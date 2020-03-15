@@ -8,19 +8,19 @@ discussion_id: 2020-03-15-how
 
 Read this book if you want to learn a counter-intuitive approach to life and decision-making from Buffet and Munger. The book is structured as a conversation between Munger, a "seeker" looking for wisdom and a Librarian. It draws from a lifetime of Buffet and Munger writing and speeches, all referenced in the lengthy bibliography. This was one of the best books I've ever read and I will re-read this at least once a year. Other things that stood out to me are below:
 
-### Worry more about avoiding stupid things than being right
+## Worry more about avoiding stupid things than being right
 
 > You only have to be right a few times in your life as long as you don't make any mistakes.&nbsp;
 
 It's impossible to be right all the time, however &nbsp;you have a chance if you're still playing the game. This is a reminder of the risk of ruin. Avoid mistakes that will take you out of the game. This is true in life as it is in investing. For example, in looking for a job or evaluating an investment opportunity, how can you avoid doing stupid things or betting the farm? How can you make sure you stay alive and keep yourself in the game? This is not an argument for inactivity and being rooted in one place. It's realizing that while it's impossible to win or be right on things that are by nature indeterministic, it's easier and more achievable to avoid mistakes very often. Now, you will miss some wins this way, but over the long run, you will do just fine. For example, Buffet & Munger have been able to become very rich despite missing out on most of the wealth created by technology companies in the past two decades.&nbsp;
 
-### It matters how you define the problem
+## It matters how you define the problem
 
 > Invert, always Invert. For example, to understand how to be happy in life, study how to make life miserable.
 
 If you're thinking of a solution to a difficult problem, think forwards as well as backwards. Say you want to be happy in life, you'd have to think about what you'd do if you wanted to be sad in life. When solving difficult problems, invert, and you're likely to find new approaches to solve the problem. In life and work, spend as much time defining the problem as you do on solving it.&nbsp;
 
-### Be wary of complexity as it leads to false confidence
+## Be wary of complexity as it leads to false confidence
 
 This one is important. I've seen companies get so obsessed with data and metrics that they become far removed from the business goals those metrics are set up to drive and measure.&nbsp; Also, some people are not comfortable saying, "I don't know" or know an accept the limits of things that are unknowable.&nbsp; The more powerful and useful any model, the more error it tends to produce through overconfident misuse. The more complex the metric, the more likely for it to be divorced from what it was set out to measure.&nbsp; Additional complexity does not mean a better solution. One quote that this reminds me of.&nbsp;
 
@@ -28,7 +28,7 @@ This one is important. I've seen companies get so obsessed with data and metrics
 
 Stay away from complicated rules and filters. They do not necessarily improve accuracy and they provide false precision. For each big decision, ask yourself: "What are the 2 or 3 things that matter most?". Very quickly, narrow your decision making criteria to the most important and knowable facts.&nbsp;
 
-### Ask yourself: What evidence should exist if my argument or hypothesis is correct?
+## Ask yourself: What evidence should exist if my argument or hypothesis is correct?
 
 Always remember the things that do not affect whether something is true or not
 
@@ -38,7 +38,7 @@ Always remember the things that do not affect whether something is true or not
 
 Some things are either true or not. You cannot use any of the above as a proxy for good decision-making all the time. This is especially true in complex systems, where the interactions of all the components are not fully understood. Hold yourself to a higher bar and do the work required to have an opinion.
 
-### Positive Return on Investment (ROI) is not enough reason to make an investment
+## Positive Return on Investment (ROI) is not enough reason to make an investment
 
 > You cannot merely do one thing
 
