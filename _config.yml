@@ -1,12 +1,19 @@
-title: bankole.org
+title: Bankole
 description: ''
 baseurl: ''
 url: 'https://bankole.org'
 author:
-    name: 'Bankole Makanju'
+    name: 'Bankole'
     url: 'https://bankole.org'
-    email: bmakanju@gmail.com
+    email: ""
 markdown: kramdown
+twitter:
+  username: @zeroplustwo_
+  card: summary
+facebook:
+  app_id: ""
+  publisher: ""
+  admin: ""
 include:
     - _pages
 sass:
