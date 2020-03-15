@@ -7,7 +7,7 @@ permalink: /about/
 
 I read books, ask questions and connect the dots. I spend my free time going down the rabbit holes that interest me. Technology, Design, Economics, Finance are the areas that I find interesting. This blog is my outlet to write about those things.
 
-I have worked in startups, management consulting, and have an MBA. Currently, I work as a Product Manager in Seattle.
+I have worked in startups, management consulting, and have an MBA. Currently, I work as a Product Manager in Seattle. To contact me, fill the form below and I'll get back to you as soon as I can. 
 
 
 <div style="display:flex;flex-wrap:wrap"><a href="https://twitter.com/zeroplustwo_" target="_blank" rel="noopener noreferrer" style="text-decoration:none;border:0;width:36px;height:36px;padding:2px;margin:5px;color:#0f1011;border-radius:35%;background-color:#e7eff7;"><svg class="niftybutton-twitter" style="display:block;fill:currentColor" data-tag="twi" data-name="Twitter" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
