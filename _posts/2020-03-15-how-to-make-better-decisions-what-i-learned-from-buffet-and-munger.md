@@ -1,8 +1,9 @@
 ---
 layout: post
-author:
-  - name
+author: Bankole
 title: 'How to make better decisions: What I learned from Buffet and Munger'
+comments: true
+discussion_id: 2020-03-15-how
 ---
 
 Read this book if you want to learn a counter-intuitive approach to life and decision-making from Buffet and Munger. The book is structured as a conversation between Munger, a "seeker" looking for wisdom and a Librarian. It draws from a lifetime of Buffet and Munger writing and speeches, all referenced in the lengthy bibliography. This was one of the best books I've ever read and I will re-read this at least once a year. Other things that stood out to me are below:
