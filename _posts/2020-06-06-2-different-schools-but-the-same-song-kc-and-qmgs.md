@@ -12,7 +12,7 @@ discussion_id: 2020-03-15-how
 
 That was my reaction the first time I saw the video. THEY ARE SINGING OUR SCHOOL SONG. It’s the same thing, word for word. How do they know the lyrics? Did all these *oyinbo* people attend King’s College Lagos too? Or, wait - is our school song not ***our own***?
 
-{% include youtube.html youtube_id=h0zjusJ1-QM %}  
+{% include youtube.html youtube_id="h0zjusJ1-QM" %}  
 _Those people singing **our** song_
 
 
