@@ -36,7 +36,7 @@ Both songs are the same, with a small modification on the first line.&nbsp;
 
 \[KC School song lyrics\] \[Queen Mary Walsall Lyrics\]
 
-![](/uploads/2020-6-06-kc-school-song.jpg){: width="400" height="800"}<br>![](/uploads/2020-06-06-qmgs-school-song.jpg){: width="400" height="800"}
+![](/uploads/2020-6-06-kc-school-song.jpg){: width="520" height="640"}<br>![](/uploads/2020-06-06-qmgs-school-song.jpg){: width="900" height="1200"}
 
 &nbsp;
 
