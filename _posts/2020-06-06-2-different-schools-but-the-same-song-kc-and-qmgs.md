@@ -1,9 +1,7 @@
 ---
 layout: post
 author:
-title: >-
-  Different schools but the same song: King's College Lagos and Queen Mary's
-  Grammar School, Walsall
+title: '2 different schools but the same song: KC and QMGS'
 comments: true
 discussion_id: 2020-03-15-how
 ---
@@ -18,7 +16,7 @@ That was my reaction the first time I saw the video. THEY ARE SINGING OUR SCHOOL
 
 King’s College Lagos, or KC, is Nigeria’s premier secondary school and it’s most popular. Her alumni are accomplished and include Bayo Ogunlesi, Hakeem Belo-Osagie, Alex Ekwueme, Lamido Sanusi and many more.&nbsp;
 
-The British colonizers founded KC in 1909 with 10 students. Originally called “King’s School”, it’s purpose was to "*provide for the youth… a higher education than those supplied by existing schools*." This history has led to a proud student and alumni body. KC was a government school but our history pre-dated Nigeria’s forming or independence. Our uniforms were different.. And KC boys took themselves seriously. We were different from other government schools and&nbsp; to confirm, all you had to do was listen to our school song - “Service to the living\! Honour to our dead...”.&nbsp; KC Boys love the school song. We sing when Old Boys marry, we sing it when they die, every single time in raucous harmony. It is our thing.
+The British colonizers founded KC in 1909 with 10 students. Originally called “King’s School”, it’s purpose was to "*provide for the youth… a higher education than those supplied by existing schools*." This history has led to a proud student and alumni body. KC was a government school but our history pre-dated Nigeria’s forming or independence. Our uniforms were different.. And KC boys took themselves seriously. We were different from other government schools and&nbsp; to confirm, all you had to do was listen to our school song - “Service to the living\! Honour to our dead…”.&nbsp; KC Boys love the school song. We sing when Old Boys marry, we sing it when they die, every single time in raucous harmony. It is our thing.
 
 The men in that video seemed to love the song as much as me and my KC brothers do. As the title says, these were old boys of Queen Mary’s Grammar School, an all boys’ grammar school in Walsall England.&nbsp;
 
