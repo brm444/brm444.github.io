@@ -14,7 +14,7 @@ discussion_id: 2020-03-15-how
 
 That was my reaction the first time I saw the video. THEY ARE SINGING OUR SCHOOL SONG. It’s the same thing, word for word. How do they know the lyrics? Did all these *oyinbo* people attend King’s College Lagos too? Or, wait - is our school song not ***our own***?
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/h0zjusJ1-QM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+{% include youtube.html youtube_id="h0zjusJ1-QM" %}
 
 King’s College Lagos, or KC, is Nigeria’s premier secondary school and it’s most popular. Her alumni are accomplished and include Bayo Ogunlesi, Hakeem Belo-Osagie, Alex Ekwueme, Lamido Sanusi and many more.&nbsp;
 
