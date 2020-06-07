@@ -28,7 +28,7 @@ Queen Mary’s Grammar School (QMGS) is one of the UK’s oldest schools. It was
 
 Both songs are the same, with a small modification on the first line.&nbsp;
 
-![](/uploads/school-songs.jpg){: width="1500" height="1000"} *King's College on the left, QMGS on the right...*&nbsp;
+![](/uploads/school-songs.jpg){: width="1500" height="500"} *King's College on the left, QMGS on the right...*&nbsp;
 
 Both schools even have similar mottos derived from their school songs. For QMGS, it’s "Floreat Regina Schola Mariae” literally, "May the school of Queen Mary Flourish," and for King’s College, it’s “Floreat Collegium”, translated literally as “May the College Flourish”
 
