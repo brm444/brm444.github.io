@@ -36,7 +36,7 @@ Both songs are the same, with a small modification on the first line.&nbsp;
 
 \[KC School song lyrics\] \[Queen Mary Walsall Lyrics\]
 
-![QMGS School song](/uploads/KC-QMGS-Song/2020-06-06-qmgs-school-song.png "QMGS School Song") ![KC School song](/uploads/KC-QMGS-Song/2020-06-06-kc-school-song.png "KC School song")
+![QMGS School song](/uploads/KC-QMGS-Song/2020-06-06-qmgs-school-song.jpg "QMGS School Song") ![KC School song](uploads/KC-QMGS-Song/2020-6-06-kc-school-song.jpg "KC School song")
 &nbsp;
 
 Both schools even have similar mottos derived from their school songs. For QMGS, it’s "Floreat Regina Schola Mariae” literally, "May the school of Queen Mary Flourish," and for King’s College, it’s “Floreat Collegium”, translated literally as “May the College Flourish”
