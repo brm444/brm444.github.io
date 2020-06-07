@@ -22,7 +22,7 @@ The British colonizers founded KC in 1909 with 10 students. Originally called �
 
 The men in that video seemed to love the song as much as me and my KC brothers do. As the title says, these were old boys of Queen Mary’s Grammar School, an all boys’ grammar school in Walsall England.&nbsp;
 
-[Going to QMGS Walsall from KC](/uploads/KC-QMGS-2020-06-06-kc-to-walsall "Going to QMGS Walsall from KC, Lagos")
+[Going to QMGS Walsall from KC](/uploads/KC-QMGS/2020-06-06-kc-to-walsall "Going to QMGS Walsall from KC, Lagos")
 
 Fake news, Google. Walsall is even further from Lagos, Nigeria.
 
