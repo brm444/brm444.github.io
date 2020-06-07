@@ -12,9 +12,7 @@ discussion_id: 2020-03-15-how
 
 That was my reaction the first time I saw the video. THEY ARE SINGING OUR SCHOOL SONG. It’s the same thing, word for word. How do they know the lyrics? Did all these *oyinbo* people attend King’s College Lagos too? Or, wait - is our school song not ***our own***?
 
-{% include youtube.html youtube_id="h0zjusJ1-QM" %}  
-_Those people singing **our** song_
-
+{% include youtube.html youtube_id="h0zjusJ1-QM" %}<br>*Those people singing **our** song*
 
 King’s College Lagos, or KC, is Nigeria’s premier secondary school and it’s most popular. Her alumni are accomplished and include Bayo Ogunlesi, Hakeem Belo-Osagie, Alex Ekwueme, Lamido Sanusi and many more.&nbsp;
 
@@ -24,17 +22,13 @@ The men in that video seemed to love the song as much as me and my KC brothers d
 
 Walsall, United Kingdom is very far from Lagos, Nigeria.
 
-&nbsp;
-
 Given that Nigeria was a British colony until 1960, was our school song copied?&nbsp;
 
 Queen Mary’s Grammar School (QMGS) is one of the UK’s oldest schools. It was founded in 1554, 355 years before King’s College Lagos. It has several accomplished alumni and has existed way before the British or Portuguese even visited Nigeria.&nbsp;
 
 Both songs are the same, with a small modification on the first line.&nbsp;
 
-
-![QMGS School song](/uploads/KC-QMGS-Song/2020-06-06-qmgs-school-song.jpg "QMGS School Song") ![KC School song](uploads/KC-QMGS-Song/2020-6-06-kc-school-song.jpg "KC School song")
-&nbsp;
+![](/uploads/school-songs.jpg){: width="1500" height="1000"} *King's College on the left, QMGS on the right...*&nbsp;
 
 Both schools even have similar mottos derived from their school songs. For QMGS, it’s "Floreat Regina Schola Mariae” literally, "May the school of Queen Mary Flourish," and for King’s College, it’s “Floreat Collegium”, translated literally as “May the College Flourish”
 
