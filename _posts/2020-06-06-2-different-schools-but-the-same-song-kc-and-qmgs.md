@@ -22,7 +22,7 @@ The British colonizers founded KC in 1909 with 10 students. Originally called �
 
 The men in that video seemed to love the song as much as me and my KC brothers do. As the title says, these were old boys of Queen Mary’s Grammar School, an all boys’ grammar school in Walsall England.&nbsp;
 
-{% include image-gallery.html folder="/uploads/KC-QMGS" %}
+[Going to QMGS Walsall from KC](/uploads/KC-QMGS-2020-06-06-kc-to-walsall "Going to QMGS Walsall from KC, Lagos")
 
 Fake news, Google. Walsall is even further from Lagos, Nigeria.
 
@@ -36,7 +36,7 @@ Both songs are the same, with a small modification on the first line.&nbsp;
 
 \[KC School song lyrics\] \[Queen Mary Walsall Lyrics\]
 
-![QMGS School song](/uploads/KC-QMGS-Song/2020-06-06-qmgs-school-song){:class="img-responsive"} ![KC School song](/uploads/KC-QMGS-Song/2020-06-06-kc-school-song){:class="img-responsive"}
+![QMGS School song](/uploads/KC-QMGS-Song/2020-06-06-qmgs-school-song.png "QMGS School Song") ![KC School song](/uploads/KC-QMGS-Song/2020-06-06-kc-school-song.png "KC School song")
 &nbsp;
 
 Both schools even have similar mottos derived from their school songs. For QMGS, it’s "Floreat Regina Schola Mariae” literally, "May the school of Queen Mary Flourish," and for King’s College, it’s “Floreat Collegium”, translated literally as “May the College Flourish”
