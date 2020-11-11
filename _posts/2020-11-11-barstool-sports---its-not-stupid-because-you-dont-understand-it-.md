@@ -9,9 +9,7 @@ discussion_id: '2020-11-10'
 
 People are too quick to dismiss the things they do not understand and throw around the "idiot" term if something doesn't immediately make sense.
 
-I listened to two podcasts on a four hour drive this past weekend. And they were both interesting for different reasons.
-
-Dave Portnoy on Bloomberg Business - [link](https://www.bloomberg.com/news/audio/2020-10-02/dave-portnoy-on-the-business-of-sports-media-podcast)
+I listened to a podcast with Dave Portnoy on a long drive this past weekend. (Dave Portnoy on Bloomberg Business - [link](https://www.bloomberg.com/news/audio/2020-10-02/dave-portnoy-on-the-business-of-sports-media-podcast))
 
 Dave Portnoy is the founder of Barstool sports, a "men's lifestyle" publication that combines crassness, humour and sports to develop a cult following. He is also the star of Davy Day Trader Global (DDTG), his livestream of his experience trading stocks. He's put up to $5 million of his own money into his day trading account and has popularized the saying - "stonks always go up"
 
