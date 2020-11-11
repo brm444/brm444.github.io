@@ -1,7 +1,7 @@
 ---
 layout: post
 author:
-  - name
+  - Bankole
 title: Barstool sports - It's not stupid because you don't understand it.
 comments: true
 discussion_id: '2020-11-10'
