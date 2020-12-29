@@ -1,6 +1,7 @@
 ---
 layout: post
-author: Bankole
+author:
+  - name
 title: 'How to make better decisions: What I learned from Buffet and Munger'
 comments: false
 discussion_id: 2020-03-15-how-to-make-better-decisions
