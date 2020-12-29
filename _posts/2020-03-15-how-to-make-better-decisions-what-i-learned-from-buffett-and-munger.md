@@ -2,12 +2,12 @@
 layout: post
 author:
   - name
-title: 'How to make better decisions: What I learned from Buffet and Munger'
+title: 'How to make better decisions: What I learned from Buffett and Munger'
 comments: false
 discussion_id: 2020-03-15-how-to-make-better-decisions
 ---
 
-Read this book if you want to learn a counter-intuitive approach to life and decision-making from Buffet and Munger. The book is structured as a conversation between Munger, a "seeker" looking for wisdom and a Librarian. It draws from a lifetime of Buffet and Munger writing and speeches, all referenced in the lengthy bibliography. This was one of the best books I've ever read and I will re-read this at least once a year. Other things that stood out to me are below:
+Read this book if you want to learn a counter-intuitive approach to life and decision-making from Buffett and Munger. The book is structured as a conversation between Munger, a "seeker" looking for wisdom and a Librarian. It draws from a lifetime of Buffett and Munger writing and speeches, all referenced in the lengthy bibliography. This was one of the best books I've ever read and I will re-read this at least once a year. Other things that stood out to me are below:
 
 ## Worry more about avoiding stupid things than being right
 
@@ -17,7 +17,7 @@ It's impossible to be right all the time, however &nbsp;you have a chance if you
 
 ## It matters how you define the problem
 
-> Invert, always Invert. For example, to understand how to be happy in life, study how to make life miserable.
+> Invert, always invert. For example, to understand how to be happy in life, study how to make life miserable.
 
 If you're thinking of a solution to a difficult problem, think forwards as well as backwards. Say you want to be happy in life, you'd have to think about what you'd do if you wanted to be sad in life. When solving difficult problems, invert, and you're likely to find new approaches to solve the problem. In life and work, spend as much time defining the problem as you do on solving it.&nbsp;
 
