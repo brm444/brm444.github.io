@@ -3,7 +3,7 @@ layout: post
 author: Bankole
 title: '2 different schools but the same song: KC, Lagos and QMGS, Walsall'
 comments: true
-discussion_id: 2020-03-15-how
+discussion_id: 2020-06-07-2-different-schools
 ---
 
 &nbsp;

@@ -3,7 +3,7 @@ layout: post
 author:
   - Bankole
 title: My 2021 wishlist for the African tech ecosystem
-discussion_id: 2020-12-28-My
+discussion_id: 2020-12-29-my-2021-wishlist
 comments: true
 ---
 
