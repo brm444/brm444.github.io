@@ -1,7 +1,7 @@
 ---
 layout: post
 author:
-  - name
+  - Bankole
 title: The best books I read in 2020
 discussion_id: 2020-12-29-the-best-books-I-read-in-2020
 comments: true
