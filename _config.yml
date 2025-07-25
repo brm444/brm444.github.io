@@ -16,15 +16,14 @@ facebook:
   admin: ""
 include:
     - _pages
-sass:
-    sass_dir: _sass
-    style: compressed
 plugins:
     - jekyll-feed
     - jekyll-paginate
     - jekyll-seo-tag
     - jemoji
-remote_theme: chesterhow/tale
+    - jekyll-remote-theme
+    - jektex
+remote_theme: riggraz/no-style-please
 permalink: '/:year-:month-:day/:title'
 paginate: 5
 exclude:
