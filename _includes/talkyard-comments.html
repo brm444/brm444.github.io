@@ -1,8 +1,15 @@
 {% if site.talkyard_server_url %}
-<script>talkyardServerUrl='{{ site.talkyard_server_url }}';</script>
-<script async defer src="{{ site.talkyard_script_url }}"></script>
-<!-- You can specify a per page discussion id on the next line, if your URLs might change. -->
-<div class="talkyard-comments" data-discussion-id="{{ page.discussion_id }}" style="margin-top: 45px;">
-<noscript>Please enable Javascript to view comments.</noscript>
-</div>
+<section class="comments-section">
+  <h3>Comments</h3>
+  <script>talkyardServerUrl='{{ site.talkyard_server_url }}';</script>
+  <script async defer src="{{ site.talkyard_script_url }}"></script>
+  
+  <div class="talkyard-comments" 
+       data-discussion-id="{{ page.discussion_id | default: page.url }}" 
+       style="margin-top: 1rem;">
+    <noscript>
+      <p>Please enable JavaScript to view comments.</p>
+    </noscript>
+  </div>
+</section>
 {% endif %}

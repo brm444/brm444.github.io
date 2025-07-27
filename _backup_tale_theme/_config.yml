@@ -1,0 +1,36 @@
+title: bankole.org
+description: ''
+baseurl: ''
+url: 'https://bankole.org'
+author:
+    name: 'Bankole'
+    url: 'https://bankole.org'
+    email: ""
+markdown: kramdown
+twitter:
+  username: zeroplustwo_
+  card: summary
+facebook:
+  app_id: ""
+  publisher: ""
+  admin: ""
+include:
+    - _pages
+sass:
+    sass_dir: _sass
+    style: compressed
+plugins:
+    - jekyll-feed
+    - jekyll-paginate
+    - jekyll-seo-tag
+    - jemoji
+remote_theme: chesterhow/tale
+permalink: '/:year-:month-:day/:title'
+paginate: 5
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - tale.gemspec
+talkyard_server_url: https://comments-for-makanju-org.talkyard.net
+talkyard_script_url: https://c1.ty-cdn.net/-/talkyard-comments.min.js
+google_analytics: UA-160597721-1

@@ -1,0 +1,20 @@
+entries:
+  - title: about
+    url: /about
+
+  - title: posts
+    post_list:
+      limit: 5
+      show_more: true
+      show_more_text: "view all"
+      show_more_url: /archive.html
+
+  - title: archives
+    entries:
+      - title: by year
+        url: /archive/
+      - title: by tag
+        url: /tags/
+
+  - title: thanks
+    url: /thanks

@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="{{ site.lang | default: 'en-US' }}">
   {% include head.html %}
-
   <body>
+    <div class="container">
+      <header class="site-header">
+        <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+        {% if site.description %}
+          <p class="site-description">{{ site.description }}</p>
+        {% endif %}
+      </header>
 
-    {% include navigation.html %}
+      <main class="page-content">
+        {{ content }}
+      </main>
 
-    <main>
-      {{ content }}
-    </main>
-
-    {% include footer.html %}
+      <footer class="site-footer">
+        <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}. All rights reserved.</p>
+      </footer>
+    </div>
   </body>
 </html>

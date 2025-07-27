@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<h1>{{ page.date | date: "%Y" }}</h1>
+
+<ul>
+  {% for post in page.posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <time>({{ post.date | date: "%b %-d" }})</time>
+    </li>
+  {% endfor %}
+</ul>
+
+<p><a href="{{ '/' | relative_url }}">← home</a></p>

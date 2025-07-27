@@ -2,38 +2,68 @@
 layout: default
 ---
 
-<div class="post">
-  <div class="post-info">
-    <span>Written by</span>
-    {% if page.author %}
-        {{ page.author }}
-    {% else %}
-        {{ site.author.name }}
-    {% endif %}
+<article class="post">
+  <!-- Post metadata -->
+  <header class="post-header">
+    <h1>{{ page.title }}</h1>
+    
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date: site.theme_config.date_format | default: "%b %-d, %Y" }}
+      </time>
+      
+      {% if page.reading_time or site.plugins contains 'jekyll-reading-time' %}
+        <span class="reading-time">
+          • {{ page.content | reading_time }}
+        </span>
+      {% endif %}
+      
+      {% if page.author %}
+        <span class="author">• by {{ page.author }}</span>
+      {% elsif site.author.name %}
+        <span class="author">• by {{ site.author.name }}</span>
+      {% endif %}
+    </div>
+  </header>
 
-    {% if page.date %}
-      <br>
-      <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
-    {% endif %}
+  <!-- Post content -->
+  <div class="post-content">
+    {{ content }}
   </div>
 
-  <h1 class="post-title">{{ page.title }}</h1>
-  <div class="post-line"></div>
+  <!-- Post footer with tags -->
+  {% if page.tags.size > 0 %}
+  <footer class="post-footer">
+    <div class="post-tags">
+      Tags: 
+      {% for tag in page.tags %}
+        <a href="{{ '/tag/' | append: tag | relative_url }}">#{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </div>
+  </footer>
+  {% endif %}
+</article>
 
-  {{ content }}
-</div>
-
-{% if page.comments %}
+<!-- Comments section -->
+{% if page.comments and site.talkyard_server_url %}
   {% include talkyard-comments.html %}
 {% endif %}
 
-<div class="pagination">
-  {% if page.next.url %}
-    <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
-  {% endif %}
+<!-- Post navigation -->
+<nav class="post-nav">
   {% if page.previous.url %}
-    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
+    <div class="prev-post">
+      ← <a href="{{ page.previous.url | relative_url }}">{{ page.previous.title }}</a>
+    </div>
   {% endif %}
-
-  <a href="#" class="top">Top</a>
-</div>
+  
+  {% if page.next.url %}
+    <div class="next-post">
+      <a href="{{ page.next.url | relative_url }}">{{ page.next.title }}</a> →
+    </div>
+  {% endif %}
+  
+  <div class="home-link">
+    <a href="{{ '/' | relative_url }}">{{ site.theme_config.back_home_text | default: "← home" }}</a>
+  </div>
+</nav>

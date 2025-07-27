@@ -2,30 +2,48 @@
 layout: default
 ---
 
-<div class="catalogue">
-  {% for post in paginator.posts %}
-    <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
-      <div>
-        <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
-        <h1 class="catalogue-title">{{ post.title }}</h1>
-        <div class="catalogue-line"></div>
+<div class="home-content">
+  {{ content }}
+</div>
 
-        <p>
-          {{ post.content | strip_html | truncatewords: 30 }}
-        </p>
-
-      </div>
-    </a>
+<!-- Navigation menu based on no-style-please format -->
+{% if site.data.menu %}
+<nav class="site-nav">
+  {% for entry in site.data.menu.entries %}
+    <div class="nav-section">
+      {% if entry.url %}
+        <h3><a href="{{ entry.url | relative_url }}">{{ entry.title }}</a></h3>
+      {% else %}
+        <h3>{{ entry.title }}</h3>
+      {% endif %}
+      
+      {% if entry.post_list %}
+        <ul class="post-list">
+          {% assign posts = site.posts | limit: entry.post_list.limit %}
+          {% for post in posts %}
+            <li>
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              <time>({{ post.date | date: "%b %-d, %Y" }})</time>
+            </li>
+          {% endfor %}
+          {% if entry.post_list.show_more and site.posts.size > entry.post_list.limit %}
+            <li class="show-more">
+              <a href="{{ entry.post_list.show_more_url | relative_url }}">
+                {{ entry.post_list.show_more_text | default: "view all" }}
+              </a>
+            </li>
+          {% endif %}
+        </ul>
+      {% endif %}
+      
+      {% if entry.entries %}
+        <ul class="sub-menu">
+          {% for subentry in entry.entries %}
+            <li><a href="{{ subentry.url | relative_url }}">{{ subentry.title }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
   {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
-  {% endif %}
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
-  {% endif %}
-
-  <span>{{ paginator.page }}</span>
-</div>
+</nav>
+{% endif %}

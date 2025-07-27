@@ -6,6 +6,18 @@ author:
     name: 'Bankole'
     url: 'https://bankole.org'
     email: ""
+
+# Theme configuration - using minimal theme for compatibility
+# remote_theme: riggraz/no-style-please  # Temporarily disabled due to jektex requirement
+
+# Override theme's plugin requirements
+safe: false
+theme_config:
+  appearance: "auto"          # Can be "light", "dark", or "auto"
+  back_home_text: "← home"    # Customize the "back home" link text
+  date_format: "%b %-d, %Y"   # Date format for posts
+  show_description: false     # Whether to show site description on home page
+
 markdown: kramdown
 twitter:
   username: zeroplustwo_
@@ -24,13 +36,68 @@ plugins:
     - jekyll-paginate
     - jekyll-seo-tag
     - jemoji
-remote_theme: chesterhow/tale
+    - jekyll-remote-theme
+    - jekyll-archives
+    - jekyll-sitemap
+    - jekyll-redirect-from
+    - jekyll-reading-time
+    - jekyll-minifier
+    - jekyll-compress-images
+    - jekyll-webp
+    - jekyll-twitter-plugin
+    - jekyll-analytics
+    - jekyll-include-cache
+    - jekyll-admin
+
+# Plugin configurations
+jekyll-archives:
+  enabled:
+    - year        # Create yearly archive pages
+    - month       # Create monthly archive pages
+    - tags        # Create tag archive pages
+  layouts:
+    year: year-archive
+    month: month-archive
+    tag: tag-archive
+  permalinks:
+    year: '/archive/:year/'
+    month: '/archive/:year/:month/'
+    tag: '/tag/:name/'
+
+# Image optimization settings
+jekyll-webp:
+  enabled: true
+  quality: 80
+  img_dir: "/uploads"
+  nested: true
+
+# Minification settings (only for production)
+jekyll-minifier:
+  remove_comments: true
+  remove_intertag_spaces: true
+  compress_css: true
+  compress_javascript: true
+
+# Math/LaTeX rendering (disabled due to Ruby version compatibility)
+# jektex:
+#   cache_dir: ".jektex-cache"
+#   ignore: ["*.xml"]
+#   silent: false
 permalink: '/:year-:month-:day/:title'
 paginate: 5
 exclude:
     - Gemfile
     - Gemfile.lock
-    - tale.gemspec
+    - no-style-please.gemspec  # Updated from tale.gemspec
+
+# Custom integrations (preserved from Tale setup)
 talkyard_server_url: https://comments-for-makanju-org.talkyard.net
 talkyard_script_url: https://c1.ty-cdn.net/-/talkyard-comments.min.js
-google_analytics: UA-160597721-1
+
+# Analytics (both old and new for transition period)
+google_analytics: UA-160597721-1  # Legacy Universal Analytics
+google_analytics_4: G-XXXXXXXXXX  # Replace with your GA4 ID when ready
+
+# Enhanced SEO
+description: "Personal blog of Bankole - thoughts on technology, business, and Africa"
+lang: "en-US"
