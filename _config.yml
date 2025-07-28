@@ -7,6 +7,13 @@ author:
     url: 'https://bankole.org'
     email: ""
 markdown: kramdown
+
+# Theme configuration
+theme_config:
+  appearance: "auto"          # Can be "light", "dark", or "auto"
+  back_home_text: "← home"    # Customize the "back home" link text
+  date_format: "%b %-d, %Y"   # Date format for posts
+  show_description: false     # Whether to show site description on home page
 twitter:
   username: zeroplustwo_
   card: summary
@@ -23,7 +30,7 @@ plugins:
     - jemoji
     - jekyll-remote-theme
     - jektex
-remote_theme: riggraz/no-style-please
+# remote_theme: riggraz/no-style-please  # Using custom local implementation
 permalink: '/:year-:month-:day/:title'
 paginate: 5
 exclude:
