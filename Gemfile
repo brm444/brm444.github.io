@@ -2,7 +2,11 @@
 
 source "https://rubygems.org"
 
-# gem "rails"
+# Jekyll and theme
+gem "jekyll", "~> 4.3"
+gem "no-style-please"
+
+# Plugins
 gem "jekyll-remote-theme"
 gem "jekyll-paginate"
 gem "jekyll-feed"

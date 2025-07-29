@@ -8,6 +8,9 @@ author:
     email: ""
 markdown: kramdown
 
+# Theme specification for GitHub Pages
+theme: no-style-please
+
 # Theme configuration
 theme_config:
   appearance: "auto"          # Can be "light", "dark", or "auto"
