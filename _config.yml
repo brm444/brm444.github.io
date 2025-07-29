@@ -9,7 +9,8 @@ author:
 markdown: kramdown
 
 # Theme specification for GitHub Pages
-theme: no-style-please
+# theme: no-style-please  # Not supported by GitHub Pages
+remote_theme: riggraz/no-style-please
 
 # Theme configuration
 theme_config:
