@@ -34,7 +34,6 @@ plugins:
     - jemoji
     - jekyll-remote-theme
     - jektex
-# remote_theme: riggraz/no-style-please  # Using custom local implementation
 permalink: '/:year-:month-:day/:title'
 paginate: 5
 exclude:

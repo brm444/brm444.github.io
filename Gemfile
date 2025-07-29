@@ -3,8 +3,8 @@
 source "https://rubygems.org"
 
 # Jekyll and theme
-gem "jekyll", "~> 4.3"
-gem "no-style-please"
+gem "github-pages", group: :jekyll_plugins
+# gem "no-style-please"  # Not needed when using remote_theme
 
 # Plugins
 gem "jekyll-remote-theme"
