@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<div class="home-content">
+  {{ content }}
+</div>
+
+<!-- Navigation menu based on no-style-please format -->
+{% if site.data.menu %}
+<nav class="site-nav">
+  {% for entry in site.data.menu.entries %}
+    <div class="nav-section">
+      {% if entry.url %}
+        <h3><a href="{{ entry.url | relative_url }}">{{ entry.title }}</a></h3>
+      {% else %}
+        <h3>{{ entry.title }}</h3>
+      {% endif %}
+      
+      {% if entry.post_list %}
+        <ul class="post-list">
+          {% assign posts = site.posts | limit: entry.post_list.limit %}
+          {% for post in posts %}
+            <li>
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              <time>({{ post.date | date: site.theme_config.date_format }})</time>
+            </li>
+          {% endfor %}
+          {% if entry.post_list.show_more and site.posts.size > entry.post_list.limit %}
+            <li class="show-more">
+              <a href="{{ entry.post_list.show_more_url | relative_url }}">
+                {{ entry.post_list.show_more_text | default: "view all" }}
+              </a>
+            </li>
+          {% endif %}
+        </ul>
+      {% endif %}
+      
+      {% if entry.entries %}
+        <ul class="sub-menu">
+          {% for subentry in entry.entries %}
+            <li><a href="{{ subentry.url | relative_url }}">{{ subentry.title }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  {% endfor %}
+</nav>
+{% endif %}
