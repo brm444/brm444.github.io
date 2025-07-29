@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<article itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    {%- if page.title -%}
+      <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    {%- endif -%}
+    <p class="post-meta">
+      {%- if page.date -%}
+        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {{ page.date | date: site.theme_config.date_format | default: "%b %-d, %Y" }}
+        </time>
+      {%- endif -%}
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
+        </span>
+      {%- endif -%}
+    </p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {%- if site.talkyard_server_url -%}
+    <div class="post-comments">
+      {%- include talkyard-comments.html -%}
+    </div>
+  {%- endif -%}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
