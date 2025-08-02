@@ -3,6 +3,7 @@ layout: post
 author:
   - Bankole
 title: How to maximize Africa's demographic dividend
+discussion_id: 2017-01-07-how_to_maximize_africas_demographic_dividend
 comments: true
 ---
 

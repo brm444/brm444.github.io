@@ -7,7 +7,7 @@ discussion_id: 2021-04-06-humans_startup
 comments: true
 ---
 
-![""]("/uploads/2021/04/image.png")
+![Nigerian startup team](/uploads/2021/04/image.png)
 
 Nigerian startups have a person. This person signs the transactional and
 follow-up emails, follows up with customers on promotions and acts as the

@@ -15,7 +15,7 @@ dark continent, or the bright spot for opportunity.
 Today, Nigeria is in the incandescent phase aka "The future is so bright it
 burns my eyes".
 
-![""]("/uploads/2021/04/image-1.png")
+![African entrepreneurs](/uploads/2021/04/image-1.png)
 
 But why now? Headline acquisitions and fundraising are lagging indicators. The
 hard work of building a company worth acquiring happens well before TechCrunch.
@@ -83,7 +83,7 @@ they're too expensive, or for other structural reasons (e.g., I can't use Venmo
 for P2P in Nigeria because licenses)
 
 The startup that comes to mind here
-is [uLesson]("www.afrobility.com/uLesson"). Their product, education, is one
+is [uLesson](http://www.afrobility.com/uLesson). Their product, education, is one
 that most want. Nigeria's upper middle class can afford to send their children
 to the best schools. They hire private tutors for after-school classes. The rest
 of the middle class have to make do with the available schools and find ways to

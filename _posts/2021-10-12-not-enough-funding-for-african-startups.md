@@ -36,9 +36,8 @@ nothing]("https://www.theatlantic.com/business/archive/2010/12/the-surprising-we
 
 Africa's startup problems need asset heavy solutions. Your startup wants to
 build Electronic Health Records software? You need to [pay for internet,
-electricity and on-site support]("{%).It is not enough to build a successful
-drug procurement platform for pharmacies, you must also[operate your
-own.]("https://qz.com/africa/1582487/ghanas-mpharma-buys-kenya-pharmacy-haltons/").
+electricity and on-site support](#). It is not enough to build a successful
+drug procurement platform for pharmacies, you must also [operate your own](https://qz.com/africa/1582487/ghanas-mpharma-buys-kenya-pharmacy-haltons/).
 There's no USPS for Africa's Amazon to piggyback on. In the West, you optimize
 your Facebook ads to find a seam and you're off to the races. Some asset-light
 companies exist, but these are the exceptions that prove the rule.

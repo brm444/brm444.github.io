@@ -10,7 +10,7 @@ comments: true
 The best adverts don't resemble ads. It's why it's getting harder to tell which
 Instagram story is an ad or from your friends, or why your favorite influencer
 puts "#ad" at the bottom of the post telling you just how much they've been
-working out lately.[1]("#fn1")
+working out lately.[1](#fn1)
 
 US venture capitalists and Tech companies do the same thing. Their CEOs write
 marketing pitches thinly disguised as books. Stripe moonlights as a book
@@ -58,4 +58,4 @@ few years, a number of startup-focused PR agencies have emerged to guide early
 stage tech scene participants through all this. But there's still much more room
 to grow, and many more stories to tell. And yes, the marketing matters.
 
-1. Well, that and FTC regulations that state an advert must be clearly disclosed. Otherwise, both creator and advertiser would rather pretend it is not an advert. [↩︎]("#ffn1")
+1. Well, that and FTC regulations that state an advert must be clearly disclosed. Otherwise, both creator and advertiser would rather pretend it is not an advert. [↩︎](#ffn1)

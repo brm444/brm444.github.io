@@ -2,7 +2,7 @@
 layout: post
 author:
   - Bankole
-title: What\'s next for Africa\'s Telcos
+title: "What's next for Africa's Telcos"
 discussion_id: 2022-05-06-whats_next_africa_telcos
 comments: true
 ---

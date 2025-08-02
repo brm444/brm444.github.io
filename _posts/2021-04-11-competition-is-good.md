@@ -22,7 +22,7 @@ businesses.
 When does it make sense to go where others rush in?
 
 People have been concerned about crowded markets for centuries. Everybody was
-printing books after Gutenberg's invention[1]("#fn1"). I've read that reducing
+printing books after Gutenberg's invention[1](#fn1). I've read that reducing
 the cost to create content reduces the value of all content created. By this
 logic, the mobile phone, which makes it easy to record audio and video, reduces
 the value of all created content.
@@ -51,4 +51,4 @@ The next time you walk away from something because "many people are doing it",
 remind yourself that is not a good enough reason. There is second order question
 to ask about if you can differentiate yourself in this space
 
-1. Fifteen million books were printed in the first 42 years of the movable printing press, more than have been printed in the preceding 1000 years. [https://www.uh.edu/engines/indiana.htm]("https://www.uh.edu/engines/indiana.htm") [↩︎]("#ffn1")
+1. Fifteen million books were printed in the first 42 years of the movable printing press, more than have been printed in the preceding 1000 years. [https://www.uh.edu/engines/indiana.htm](https://www.uh.edu/engines/indiana.htm) [↩︎](#ffn1)
