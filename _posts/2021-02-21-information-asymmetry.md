@@ -1,6 +1,7 @@
 ---
 layout: post
-author: Bankole
+author:
+  - Bankole
 title: Dealing with information asymmetry
 discussion_id: 2021-02-21-information_asymmetry
 comments: true

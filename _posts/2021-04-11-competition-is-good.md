@@ -1,6 +1,7 @@
 ---
 layout: post
-author: Bankole
+author:
+  - Bankole
 title: "Everybody is doing it is a bad reason"
 discussion_id: 2021-04-11-competition_is_good
 comments: true

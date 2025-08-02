@@ -1,6 +1,7 @@
 ---
 layout: post
-author: Bankole
+author:
+  - Bankole
 title: Nigeria needs to raise tobacco taxes
 discussion_id: 2021-01-09-nigeria_tobacco_taxes
 comments: true

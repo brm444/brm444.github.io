@@ -1,6 +1,7 @@
 ---
 layout: post
-author: Bankole
+author:
+  - Bankole
 title: Mayweather, Mourinho and avoiding mistakes
 discussion_id: 2021-03-14-avoiding_mistakes
 comments: true

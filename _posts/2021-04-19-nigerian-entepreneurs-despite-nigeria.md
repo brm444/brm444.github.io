@@ -1,6 +1,7 @@
 ---
 layout: post
-author: Bankole
+author:
+  - Bankole
 title: Nigerian entrepreneurs succeed despite Nigeria
 discussion_id: 2021-04-19-nigerian_entepreneurs_despite_nigeria
 comments: true

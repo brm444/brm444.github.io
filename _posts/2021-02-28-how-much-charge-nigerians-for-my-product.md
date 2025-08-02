@@ -1,6 +1,7 @@
 ---
 layout: post
-author: Bankole
+author:
+  - Bankole
 title: How much should I charge Nigerians for my product?
 discussion_id: 2021-02-28-how_much_charge_nigerians_for_my_product
 comments: true

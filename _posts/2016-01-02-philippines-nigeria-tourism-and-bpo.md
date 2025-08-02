@@ -1,6 +1,7 @@
 ---
 layout: post
-author: Bankole
+author:
+  - Bankole
 title: 'A trip to the Philippines: Nigeria\''s tourism and BPO opportunity'
 discussion_id: 2016-01-02-philippines_nigeria_tourism_and_bpo
 comments: true

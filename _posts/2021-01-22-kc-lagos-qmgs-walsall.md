@@ -1,6 +1,7 @@
 ---
 layout: post
-author: Bankole
+author:
+  - Bankole
 title: I just discovered the KC school song is not original
 discussion_id: 2021-01-22-kc_lagos_qmgs_walsall
 comments: true

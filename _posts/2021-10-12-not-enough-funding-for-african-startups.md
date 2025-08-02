@@ -1,6 +1,7 @@
 ---
 layout: post
-author: Bankole
+author:
+  - Bankole
 title: African startups need more money
 discussion_id: 2021-10-12-not_enough_funding_for_african_startups
 comments: true

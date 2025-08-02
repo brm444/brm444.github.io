@@ -1,6 +1,7 @@
 ---
 layout: post
-author: Bankole
+author:
+  - Bankole
 title: You need (lots of) humans to run your tech startup
 discussion_id: 2021-04-06-humans_startup
 comments: true
