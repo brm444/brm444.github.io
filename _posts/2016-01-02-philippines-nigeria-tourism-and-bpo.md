@@ -1,0 +1,96 @@
+---
+layout: post
+author: Bankole
+title: 'A trip to the Philippines: Nigeria\''s tourism and BPO opportunity'
+discussion_id: 2016-01-02-philippines_nigeria_tourism_and_bpo
+comments: true
+---
+
+This post will discuss 2 (of many) things that stood out during a 2-week trip to
+the Philippines: tourism and the thriving business process outsourcing (BPO)
+industry.
+
+Nigeria and Philippines have a lot in common. Both are middle-income countries
+with a GDP per capita around $3000. They both have a relatively young population
+and have experienced strong growth in the last few years. Lagos, like Manila, is
+a perpetually gridlocked, densely populated city that has grown organically with
+apparently zero urban planning. Unlike Lagos, however, Manila has regular
+electricity. That's not the only thing the Philippines has over Nigeria.
+
+![""/]("https://miro.medium.com/max/6400/1*inOQnm88wg9mnwzL8SdiBw.jpeg")
+
+Manila at night from a few thousand feet
+
+## **Tourism and Boracay beach** -- "What exactly is the fuss about?"
+
+Philippines is an archipelago made up of over 7,000 islands so it's not
+surprising that they have great beaches. Of all the beaches, few are more
+popular than Boracay, a 45-minute plane ride from Manila.
+
+![""/]("https://miro.medium.com/max/6451/1*IR1OAEVr5MjZEWuqLSWnTw.jpeg")
+
+Sand and palm trees in Boracay, Philippines
+
+Boracay is beautiful. Sold as a dream tourist destination, it has the right
+combination of local and western culture that forex-spending foreigners love. It
+is inexpensive to travel there -- $50 for a plane ticket from Manila and another
+50 cents for a ferry ride to the busy island with its narrow streets. Meals are
+cheap, costing as little as $3 at the best restaurants. Still, I was
+unimpressed. I couldn't help think about how Nigeria has beaches at least as
+beautiful as Boracay, but not as popular. What would it take for us to develop
+holiday destinations in Nigeria?
+
+Boracay's evolution has been supported by Government. They built roads and
+airports to support the constant stream of tourists. They advertised heavily and
+developed a brand for tourism in the country -- "It's more fun in the
+Philippines". Philippines is visa-free to most OECD countries and is therefore a
+tempting holiday destination. The locals are welcoming and have a solid
+understanding that the constant stream of visitors is what drives their
+livelihood.
+
+Beyond 'exciting' locations, tourism requires supporting infrastructure. It
+requires real and perceived safety of lives and property. Internet access and
+regular electricity are table stakes, along with inexpensive transportation
+options. To understand why it's Boracay and not Bar Beach, well, those are some
+clues to start.
+
+## **Business Process Outsourcing** -- *"Man, I'm sure Nigeria has more unemployed graduates who speak English"*
+
+Among other things, BPO describes companies moving parts of their business to
+lower cost countries, with call centers being the easiest and most common.
+
+Philippines has the largest BPO industry in the world -- yes, even [bigger than
+India]("https://next.ft.com/content/1658baac-f30a-11e4-a979-00144feab7de").
+The largest of these companies take calls on behalf of American clients from
+AT&T to Wells Fargo.
+
+The industry has grown from barely anything in early 2000s to becoming the
+largest private sector employer of labour. International BPO companies all exist
+in the Philippines and they compete fiercely for talent -- some employ fresh high
+school graduates. Many have kiosks in malls to encouraging passers-by to apply.
+After application, successful candidates receive a job offer after a few hours
+of interviews and tests. This has worked for the Philippines -- unemployment has
+dropped over the last 5 years.
+
+If you hear them tell it, the Philippines has natural advantages over most
+countries to set this up. Many Filipinos speak English and the country boasts a
+literacy rate of over 90%. Since WWII, they have maintained good relations with
+the US giving big American brands like AT&T or Verizon comfort in setting up
+call centers abroad. They have the supporting infrastructure required -- their
+American clients will not tolerate any downtime for any reason. Again,
+Government actively supported the BPO industry as a vehicle of growth providing
+low cost funding, tax holidays and other incentives. In fact, they have been the
+darling of Filipino governments for the past decade because they create so many
+jobs .
+
+None of these advantages are impossible to replicate in Nigeria, no?
+
+This is not to put the Philippines on a pedestal -- that country has many issues.
+Income inequality, insurgency and terrorism in the south, slowing economic
+growth to name a few. However, they appear to have got tourism and BPO going.
+
+Overall, SE Asia has left Sub-saharan Africa in the dust. In 1970, Sub-saharan
+Africa generated 3 times the electricity per capita of SE Asia on . Today, SE
+Asia generates twice as much electricity per capita as Sub-saharan Africa.
+
+Nigeria can and should be in a better place right now. Good times soon?
