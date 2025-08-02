@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Bankole
-title: "\u201DEverybody is doing it\u201D is a bad reason"
+title: "Everybody is doing it is a bad reason"
 discussion_id: 2021-04-11-competition_is_good
 comments: true
 ---

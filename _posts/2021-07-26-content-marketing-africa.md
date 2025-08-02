@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Bankole
-title: "Content marketing and Africa\u2019s tech scene"
+title: "Content marketing and Africa's tech scene"
 discussion_id: 2021-07-26-content_marketing_africa
 comments: true
 ---

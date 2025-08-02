@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Bankole
-title: "Nigeria\u2019s secured lending opportunity"
+title: "Nigeria's secured lending opportunity"
 discussion_id: 2021-07-26-nigeria_secured_lending
 comments: true
 ---
