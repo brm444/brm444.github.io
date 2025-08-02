@@ -78,5 +78,5 @@ true. *Service to our living, Honor to our dead.*
 *[1] The British colonial government wanted "African subordinates to serve the
 [British] central government" and a '"...limited number of educated
 Nigerians..*" Check out this
-[paper]("https://ecommons.luc.edu/cgi/viewcontent.cgi?article=3012&context=luc_diss")
+[paper](https://ecommons.luc.edu/cgi/viewcontent.cgi?article=3012&context=luc_diss)
 for more.

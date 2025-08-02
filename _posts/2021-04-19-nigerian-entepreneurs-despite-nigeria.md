@@ -30,13 +30,13 @@ share in April 2020 to $62 in November of the same year.
 
 But these stand in opposition to Nigeria's economic reality. The fundamentals of
 the economy are in free-fall. Nigeria's jobless rate
-has [quadrupled]("https://www.bloomberg.com/news/articles/2021-03-15/nigeria-unemployment-rate-rises-to-second-highest-on-global-list") over
+has [quadrupled](https://www.bloomberg.com/news/articles/2021-03-15/nigeria-unemployment-rate-rises-to-second-highest-on-global-list) over
 the last 5 years and today, less than half of Nigeria's labor force is fully
 employed. Violence and insurgency threaten lives and property in Nigeria's
-north-east. It is [harder]("https://www.doingbusiness.org/en/rankings") to
+north-east. It is [harder](https://www.doingbusiness.org/en/rankings) to
 start a business in Nigeria than in Egypt, South Africa, or Ghana. Permits take
 months instead of days,
-and [incoherent]("https://nairametrics.com/2021/04/09/sec-declares-chaka-bamboo-risevest-and-trove-illegal-trading-platforms/") [government]("https://techpoint.africa/2020/08/11/lagos-ride-hailing-regulations-august/") [policy]("https://techpoint.africa/2020/12/10/why-you-can-no-longer-buy-or-register-new-sim-cards-in-nigeria-for-now/") is
+and [incoherent](https://nairametrics.com/2021/04/09/sec-declares-chaka-bamboo-risevest-and-trove-illegal-trading-platforms/) [government](https://techpoint.africa/2020/08/11/lagos-ride-hailing-regulations-august/) [policy](https://techpoint.africa/2020/12/10/why-you-can-no-longer-buy-or-register-new-sim-cards-in-nigeria-for-now/) is
 a cloud over startups that could rain any moment. All this as the population
 inches towards 300 million by 2050.
 
@@ -51,9 +51,9 @@ their own terms.
 ### THEY BUILD FOR BUILDERS
 
 Businesses are the primary customers for 4 of 5
-Nigerian [startups]("https://techpoint.africa/2021/03/23/y-combinator-w21-demo-day/") in
+Nigerian [startups](https://techpoint.africa/2021/03/23/y-combinator-w21-demo-day/) in
 Y Combinator W21. This is also true for the [W20
-batch]("https://www.benjamindada.com/five-nigerian-startups-yc-winter-2020/").
+batch](https://www.benjamindada.com/five-nigerian-startups-yc-winter-2020/).
 
 These B2B startups are important because they make entrepreneurship less risky.
 The businesses use the startup's services to make money so they are easier to
@@ -93,7 +93,7 @@ middle-class' willingness to pay, and have recently raised prices to reflect
 this (and of course, to cover their costs).
 
 See this [HBR
-article]("https://hbr.org/2011/01/new-business-models-in-emerging-markets") for
+article](https://hbr.org/2011/01/new-business-models-in-emerging-markets) for
 more on building for customers in the middle.
 
 ### THEY BUILD FOR THE INTERNATIONAL CUSTOMERS
@@ -104,11 +104,11 @@ physical borders, and in most cases have near-zero marginal costs.
 This is already happening. Startups like Moneymie are going after the immigrant
 population using remittances and money transfer as a hook. Individual creators
 are selling NFTs
-and [making]("https://www.coindesk.com/the-nft-craze-is-helping-nigerian-artists-go-global") a
+and [making](https://www.coindesk.com/the-nft-craze-is-helping-nigerian-artists-go-global) a
 lot of money. Sight unseen, a
-Nigerian [produced]("https://www.pulse.ng/entertainment/music/ransom-beatz-tells-pulse-about-working-with-tekashi-6ix9ine-ramoon-runtown-dizzie/x53ncw9") a
+Nigerian [produced](https://www.pulse.ng/entertainment/music/ransom-beatz-tells-pulse-about-working-with-tekashi-6ix9ine-ramoon-runtown-dizzie/x53ncw9) a
 billboard-charting song for [Tekashi
-6ix9ine]("https://en.wikipedia.org/wiki/6ix9ine").
+6ix9ine](https://en.wikipedia.org/wiki/6ix9ine).
 
 Startups that serve international customers develop good habits as these
 customers tend to have a high quality bar. At the same time, the Nigerian

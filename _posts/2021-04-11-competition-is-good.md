@@ -9,9 +9,9 @@ comments: true
 
 People worry about starting projects in crowded spaces. Peter Thiel
 says [competition is for
-losers]("https://www.wsj.com/articles/peter-thiel-competition-is-for-losers-1410535536")($).
+losers](https://www.wsj.com/articles/peter-thiel-competition-is-for-losers-1410535536)($).
 Kevin Kelly, the founder of Wired magazine, says you should [work on something
-nobody has a name for]("https://www.nfx.com/post/kevin-kelly-nfx-podcast/").
+nobody has a name for](https://www.nfx.com/post/kevin-kelly-nfx-podcast/).
 Everybody wants to work on a new thing or do something that has never been done.
 
 However, for every company that created a category, there are more that entered
@@ -30,17 +30,17 @@ the value of all created content.
 This isn't true. In fact, the opposite happens. The more people can create
 content, *the better the best content becomes*. For example, it's trivial to
 write and share a newsletter, but few do this as well as [Byrne
-Hobart]("https://diff.substack.com/")or [Packy
-McCormick]("https://www.notboring.co/"). Something else is happening.
+Hobart](https://diff.substack.com/)or [Packy
+McCormick](https://www.notboring.co/). Something else is happening.
 
 The lower barrier to entry creates new opportunities. It allows creators to
 differentiate themselves. Some do by finding a niche. For example, the most
 popular newsletters create content for a narrow niche, or [1000 true
-fans]("https://kk.org/thetechnium/1000-true-fans/"). At least they start
+fans](https://kk.org/thetechnium/1000-true-fans/). At least they start
 there; Matt Levine's
-[newsletter]("https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine?sref=pMuvbz8X")
+[newsletter](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine?sref=pMuvbz8X)
 is for finance nerds but has gone
-[mainstream]("https://www.nytimes.com/2020/10/08/business/matt-levine-bloomberg.html").
+[mainstream](https://www.nytimes.com/2020/10/08/business/matt-levine-bloomberg.html).
 
 There is also the opportunity to differentiate by providing higher quality or a
 different approach to solving the problem. Google developed a better way to

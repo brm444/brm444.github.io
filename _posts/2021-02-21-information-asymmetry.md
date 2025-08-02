@@ -37,7 +37,7 @@ of abetter question is "What would you do if you were in my shoes?" vs "What
 should I do?". The former tells you more - about the person, if not just the
 problem.To learn more about building businesses that resolve this, read this
 NYTimes
-[profile]("https://www.nytimes.com/2014/04/14/technology/the-art-of-something-from-nothing.html?")
+[profile](https://www.nytimes.com/2014/04/14/technology/the-art-of-something-from-nothing.html?)
 of Rich Barton, founder of Expedia, Zillow, Glassdoor. If you're in the mood
-for a book, read [Skin in the Game]("https://amzn.to/3qIac1k") by Nassim
+for a book, read [Skin in the Game](https://amzn.to/3qIac1k) by Nassim
 Taleb.

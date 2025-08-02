@@ -26,7 +26,7 @@ lower default rates and are more likely to be paid in an economic downturn.
 
 Whoever you ask, the opportunity is big. By some estimates, consumer loans is
 a [NGN10.1T ($24.6B) market
-opportunity]("https://dejiolowe.com/2020/04/03/addressing-nigerias-overlooked-lending-opportunities/#:~:text=This%20means%20that%20the,about%20NGN%203.8%20trillion."),
+opportunity](https://dejiolowe.com/2020/04/03/addressing-nigerias-overlooked-lending-opportunities/#:~:text=This%20means%20that%20the,about%20NGN%203.8%20trillion.),
 and this most notably excludes small businesses. Moreso, Nigeria's lenders
 believe customers want these loans and see demand increasing.
 
@@ -49,7 +49,7 @@ the top 15% of the population with wealth trapped in a house or car. Their ideal
 customer takes out a loan from Creditas to pay off a higher balance loan from a
 bank. Brazil also has an economic and regulatory environment that's favorable to
 non-bank lending companies. ([Real Estate fiduciary
-liens]("https://uk.practicallaw.thomsonreuters.com/6-501-2354?transitionType=Default&contextData=(sc.Default)#:~:text=Fiduciary%20lien%20(real%20estate%20fiduciary%20lien)")that
+liens](https://uk.practicallaw.thomsonreuters.com/6-501-2354?transitionType=Default&contextData=(sc.Default)#:~:text=Fiduciary%20lien%20(real%20estate%20fiduciary%20lien))that
 let you claim and sell collateralized property without court proceedings, Open
 Banking, etc)
 
@@ -69,7 +69,7 @@ can the banks won't accept it. I haven't heard of a Nigerian bank to take an
 existing car as collateral for a loan, but I'm willing to be wrong. Case in
 point: Standard Chartered will only accept fixed deposit, mutual funds and
 treasury bills [as
-collateral]("https://www.sc.com/ng/invest/secured-wealth-lending/").
+collateral](https://www.sc.com/ng/invest/secured-wealth-lending/).
 
 Also, credit penetration is low. Less than 6% of Nigerians have access to
 credit, and this has implications for how big lenders can grow in Nigeria. In
@@ -83,11 +83,11 @@ credit scoring (completely different story), or secured credit.
 Some of the core problems are infrastructure related and Entrepreneurs are
 addressing these problems. In the last few years, many companies have started
 to [build for
-entrepreneurs]("https://bankole.org/posts/#:~:text=More%20startups%20that%20build%20for%20entrepreneurs%C2%A0"),
+entrepreneurs](https://bankole.org/posts/#:~:text=More%20startups%20that%20build%20for%20entrepreneurs%C2%A0),
 for example solving problems in identity, payments, credit scoring and
 infrastructure.
 
-The [National Collateral Registry]("https://www.ncr.gov.ng/") promises to
+The [National Collateral Registry](https://www.ncr.gov.ng/) promises to
 enable movable assets as credit. If it works, borrowers can register movable
 assets and lenders can confirm prior liens on the same asset. Unclear how
 successful this has been so far.

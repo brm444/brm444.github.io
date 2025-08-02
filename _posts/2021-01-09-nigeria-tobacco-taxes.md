@@ -16,7 +16,7 @@ better regulation of the tobacco industry, and we can get enough in taxes to
 manage the public health costs.
 
 Nigeria charges [lower
-taxes]("https://www.ictd.ac/publication/economics-tobacco-control-nigeria-modelling-fiscal-health-excise-tax/")
+taxes](https://www.ictd.ac/publication/economics-tobacco-control-nigeria-modelling-fiscal-health-excise-tax/)
 on tobacco, in part due to lower tax rates and *how* it charges taxes. In
 addition to import taxes, Nigeria charges tobacco taxes based on the value of
 the goods, different from the WHO-recommended tax on retail prices. Even without

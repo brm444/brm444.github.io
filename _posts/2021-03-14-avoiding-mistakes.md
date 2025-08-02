@@ -13,12 +13,12 @@ comments: true
 
 Jose Mourinho and Floyd Mayweather have built successful careers by avoiding
 mistakes. Mourinho's teams [concede fewer
-goals]("https://premierleaguenewsnow.com/coronavirus-lockdown-series-stats-behind-jose-mourinho-2004-05-chelsea-success/"),
+goals](https://premierleaguenewsnow.com/coronavirus-lockdown-series-stats-behind-jose-mourinho-2004-05-chelsea-success/),
 and are famous for  "parking the bus". His [7
-rules]("https://www.jefftipping.com/blog/jose-mourinhos-seven-winning-principles")
+rules](https://www.jefftipping.com/blog/jose-mourinhos-seven-winning-principles)
 for winning big games can be summarized simply as "Don't make mistakes". Like
 Mourinho, Mayweather's opponents land only 16% of their shots, [less than
-half]("https://bleacherreport.com/articles/1135177-floyd-mayweather-is-the-best-of-all-time-according-to-compubox-at-least")
+half](https://bleacherreport.com/articles/1135177-floyd-mayweather-is-the-best-of-all-time-according-to-compubox-at-least)
 the rate of his last opponent.
 
 They've both gone on to be very successful. Mourinho has won domestic titles in

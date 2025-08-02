@@ -13,7 +13,7 @@ Nigerian startups have a person. This person signs the transactional and
 follow-up emails, follows up with customers on promotions and acts as the
 virtual face of the company. These are actual people, not manufactured names for
 a Helpdesk request. For example,
-[Uche]("https://www.linkedin.com/in/ucheokafor/") is the city manager for
+[Uche](https://www.linkedin.com/in/ucheokafor/) is the city manager for
 Taxify in Lagos and the other people work with their startups. This would be
 like in 2011, when Uber launches in New York, and all the city manager signs all
 receipts and ride confirmations.

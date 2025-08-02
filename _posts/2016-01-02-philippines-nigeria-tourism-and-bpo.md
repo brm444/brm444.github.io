@@ -61,7 +61,7 @@ Among other things, BPO describes companies moving parts of their business to
 lower cost countries, with call centers being the easiest and most common.
 
 Philippines has the largest BPO industry in the world -- yes, even [bigger than
-India]("https://next.ft.com/content/1658baac-f30a-11e4-a979-00144feab7de").
+India](https://next.ft.com/content/1658baac-f30a-11e4-a979-00144feab7de).
 The largest of these companies take calls on behalf of American clients from
 AT&T to Wells Fargo.
 
