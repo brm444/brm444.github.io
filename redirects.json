@@ -4,71 +4,6 @@
       "from": "https://bankole.org/africatech-wishlist-2021/",
       "to": "/2020-12-28/africatech-wishlist-2021/",
       "type": "301"
-    },
-    {
-      "from": "https://bankole.org/philippines-nigeria-tourism-and-bpo/",
-      "to": "/2016-01-02/philippines-nigeria-tourism-and-bpo/",
-      "type": "301"
-    },
-    {
-      "from": "https://bankole.org/nigeria-tobacco-taxes/",
-      "to": "/2021-01-09/nigeria-tobacco-taxes/",
-      "type": "301"
-    },
-    {
-      "from": "https://bankole.org/kc-lagos-qmgs-walsall/",
-      "to": "/2021-01-22/kc-lagos-qmgs-walsall/",
-      "type": "301"
-    },
-    {
-      "from": "https://bankole.org/information-asymmetry/",
-      "to": "/2021-02-21/information-asymmetry/",
-      "type": "301"
-    },
-    {
-      "from": "https://bankole.org/how-much-charge-nigerians-for-my-product/",
-      "to": "/2021-02-28/how-much-charge-nigerians-for-my-product/",
-      "type": "301"
-    },
-    {
-      "from": "https://bankole.org/avoiding-mistakes/",
-      "to": "/2021-03-14/avoiding-mistakes/",
-      "type": "301"
-    },
-    {
-      "from": "https://bankole.org/humans-startup/",
-      "to": "/2021-04-06/humans-startup/",
-      "type": "301"
-    },
-    {
-      "from": "https://bankole.org/competition-is-good/",
-      "to": "/2021-04-11/competition-is-good/",
-      "type": "301"
-    },
-    {
-      "from": "https://bankole.org/nigerian-entepreneurs-despite-nigeria/",
-      "to": "/2021-04-19/nigerian-entepreneurs-despite-nigeria/",
-      "type": "301"
-    },
-    {
-      "from": "https://bankole.org/nigeria-secured-lending/",
-      "to": "/2021-07-26/nigeria-secured-lending/",
-      "type": "301"
-    },
-    {
-      "from": "https://bankole.org/content-marketing-africa/",
-      "to": "/2021-07-26/content-marketing-africa/",
-      "type": "301"
-    },
-    {
-      "from": "https://bankole.org/not-enough-funding-for-african-startups/",
-      "to": "/2021-10-12/not-enough-funding-for-african-startups/",
-      "type": "301"
-    },
-    {
-      "from": "https://bankole.org/whats-next-africa-telcos/",
-      "to": "/2022-05-06/whats-next-africa-telcos/",
-      "type": "301"
     }
   ],
   "images": [
@@ -150,19 +85,6 @@
   ],
   "netlify_redirects": [
     "https://bankole.org/africatech-wishlist-2021/ /2020-12-28/africatech-wishlist-2021/ 301",
-    "https://bankole.org/philippines-nigeria-tourism-and-bpo/ /2016-01-02/philippines-nigeria-tourism-and-bpo/ 301",
-    "https://bankole.org/nigeria-tobacco-taxes/ /2021-01-09/nigeria-tobacco-taxes/ 301",
-    "https://bankole.org/kc-lagos-qmgs-walsall/ /2021-01-22/kc-lagos-qmgs-walsall/ 301",
-    "https://bankole.org/information-asymmetry/ /2021-02-21/information-asymmetry/ 301",
-    "https://bankole.org/how-much-charge-nigerians-for-my-product/ /2021-02-28/how-much-charge-nigerians-for-my-product/ 301",
-    "https://bankole.org/avoiding-mistakes/ /2021-03-14/avoiding-mistakes/ 301",
-    "https://bankole.org/humans-startup/ /2021-04-06/humans-startup/ 301",
-    "https://bankole.org/competition-is-good/ /2021-04-11/competition-is-good/ 301",
-    "https://bankole.org/nigerian-entepreneurs-despite-nigeria/ /2021-04-19/nigerian-entepreneurs-despite-nigeria/ 301",
-    "https://bankole.org/nigeria-secured-lending/ /2021-07-26/nigeria-secured-lending/ 301",
-    "https://bankole.org/content-marketing-africa/ /2021-07-26/content-marketing-africa/ 301",
-    "https://bankole.org/not-enough-funding-for-african-startups/ /2021-10-12/not-enough-funding-for-african-startups/ 301",
-    "https://bankole.org/whats-next-africa-telcos/ /2022-05-06/whats-next-africa-telcos/ 301",
     "/wp-content/uploads/2022/12/231e8a82-682e-40f6-8457-bb53d06dd891_1186x736.png /uploads/2022/12/231e8a82-682e-40f6-8457-bb53d06dd891_1186x736.png 301",
     "/wp-content/uploads/2023/09/stable-diffusion-xl.jpg /uploads/2023/09/stable-diffusion-xl.jpg 301",
     "/wp-content/uploads/2023/09/stable-diffusion-xl-1.jpg /uploads/2023/09/stable-diffusion-xl-1.jpg 301",
@@ -181,19 +103,6 @@
   ],
   "htaccess_redirects": [
     "Redirect 301 https://bankole.org/africatech-wishlist-2021/ /2020-12-28/africatech-wishlist-2021/",
-    "Redirect 301 https://bankole.org/philippines-nigeria-tourism-and-bpo/ /2016-01-02/philippines-nigeria-tourism-and-bpo/",
-    "Redirect 301 https://bankole.org/nigeria-tobacco-taxes/ /2021-01-09/nigeria-tobacco-taxes/",
-    "Redirect 301 https://bankole.org/kc-lagos-qmgs-walsall/ /2021-01-22/kc-lagos-qmgs-walsall/",
-    "Redirect 301 https://bankole.org/information-asymmetry/ /2021-02-21/information-asymmetry/",
-    "Redirect 301 https://bankole.org/how-much-charge-nigerians-for-my-product/ /2021-02-28/how-much-charge-nigerians-for-my-product/",
-    "Redirect 301 https://bankole.org/avoiding-mistakes/ /2021-03-14/avoiding-mistakes/",
-    "Redirect 301 https://bankole.org/humans-startup/ /2021-04-06/humans-startup/",
-    "Redirect 301 https://bankole.org/competition-is-good/ /2021-04-11/competition-is-good/",
-    "Redirect 301 https://bankole.org/nigerian-entepreneurs-despite-nigeria/ /2021-04-19/nigerian-entepreneurs-despite-nigeria/",
-    "Redirect 301 https://bankole.org/nigeria-secured-lending/ /2021-07-26/nigeria-secured-lending/",
-    "Redirect 301 https://bankole.org/content-marketing-africa/ /2021-07-26/content-marketing-africa/",
-    "Redirect 301 https://bankole.org/not-enough-funding-for-african-startups/ /2021-10-12/not-enough-funding-for-african-startups/",
-    "Redirect 301 https://bankole.org/whats-next-africa-telcos/ /2022-05-06/whats-next-africa-telcos/",
     "Redirect 301 /wp-content/uploads/2022/12/231e8a82-682e-40f6-8457-bb53d06dd891_1186x736.png /uploads/2022/12/231e8a82-682e-40f6-8457-bb53d06dd891_1186x736.png",
     "Redirect 301 /wp-content/uploads/2023/09/stable-diffusion-xl.jpg /uploads/2023/09/stable-diffusion-xl.jpg",
     "Redirect 301 /wp-content/uploads/2023/09/stable-diffusion-xl-1.jpg /uploads/2023/09/stable-diffusion-xl-1.jpg",
