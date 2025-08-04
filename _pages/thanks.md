@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="https://ogp.me/ns/fb#">
    <head>
       <script type="text/javascript"> var host = "bankole.org"; if ((host == window.location.host) && (window.location.protocol != "https:")) window.location.protocol = "https";</script>
       <link href="https://gmpg.org/xfn/11" rel="profile">
