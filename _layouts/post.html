@@ -1,22 +1,21 @@
 ---
 layout: default
 ---
+<div style="margin-bottom: 20px;">
+  <a href="{{ '/' | relative_url }}" style="color: #551a8b; text-decoration: underline;">← back</a>
+</div>
+
 <article itemscope itemtype="https://schema.org/BlogPosting">
 
   <header class="post-header">
     {%- if page.title -%}
       <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     {%- endif -%}
-    <p class="post-meta" style="text-align: left;">
+    <p class="post-meta" style="text-align: right; margin-top: -40px;">
       {%- if page.date -%}
         <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-          {{ page.date | date: site.theme_config.date_format | default: "%b %-d, %Y" }}
+          {{ page.date | date: "%Y-%m-%d" }}
         </time>
-      {%- endif -%}
-      {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-          <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
-        </span>
       {%- endif -%}
     </p>
   </header>
@@ -35,3 +34,7 @@ layout: default
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+
+<div style="margin-top: 40px; margin-bottom: 20px;">
+  <a href="{{ '/' | relative_url }}" style="color: #551a8b; text-decoration: underline;">← back</a>
+</div>

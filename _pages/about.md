@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "About"
-author: "Bankole"
 permalink: /about/
 ---
 
