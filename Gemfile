@@ -12,4 +12,4 @@ gem "jekyll-paginate"
 gem "jekyll-feed"
 gem "jekyll-seo-tag"
 gem "jemoji"
-gem "jektex"
+# gem "jektex"  # Requires Ruby >= 2.7.0

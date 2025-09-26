@@ -1,6 +1,20 @@
 <script>
+  if (window.performance && window.performance.mark) {
+    performance.mark('analytics-load-start');
+  }
+  
   window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
   ga('create', '{{ site.google_analytics }}', 'auto');
   ga('send', 'pageview');
+  
+  var gaScript = document.createElement('script');
+  gaScript.async = true;
+  gaScript.src = 'https://www.google-analytics.com/analytics.js';
+  gaScript.onload = function() {
+    if (window.performance && window.performance.mark) {
+      performance.mark('analytics-load-end');
+      performance.measure('analytics-load-time', 'analytics-load-start', 'analytics-load-end');
+    }
+  };
+  document.head.appendChild(gaScript);
 </script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>

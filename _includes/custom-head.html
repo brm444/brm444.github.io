@@ -2,3 +2,47 @@
 <link rel="icon" type="image/png" href="{{ '/siteicon.png' | relative_url }}">
 <link rel="shortcut icon" type="image/png" href="{{ '/siteicon.png' | relative_url }}">
 <link rel="apple-touch-icon" href="{{ '/siteicon.png' | relative_url }}">
+
+<!-- Performance optimizations -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+<link rel="dns-prefetch" href="https://www.google-analytics.com">
+{% if site.talkyard_server_url %}
+<link rel="preconnect" href="{{ site.talkyard_server_url }}" crossorigin>
+<link rel="dns-prefetch" href="https://c1.ty-cdn.net">
+{% endif %}
+
+<!-- Performance monitoring -->
+<script>
+(function() {
+  if (window.performance && window.performance.mark) {
+    performance.mark('head-start');
+    
+    window.addEventListener('load', function() {
+      performance.mark('page-loaded');
+      performance.measure('page-load-time', 'head-start', 'page-loaded');
+      
+      if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+        setTimeout(function() {
+          var entries = performance.getEntriesByType('measure');
+          console.log('Performance Metrics:');
+          entries.forEach(function(entry) {
+            console.log(entry.name + ': ' + Math.round(entry.duration) + 'ms');
+          });
+          
+          var marks = performance.getEntriesByType('mark');
+          console.log('\nPerformance Marks:');
+          marks.forEach(function(mark) {
+            console.log(mark.name + ': ' + Math.round(mark.startTime) + 'ms');
+          });
+        }, 1000);
+      }
+    });
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      performance.mark('dom-loaded');
+      performance.measure('dom-load-time', 'head-start', 'dom-loaded');
+    });
+  }
+})();
+</script>

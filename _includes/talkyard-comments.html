@@ -1,8 +1,67 @@
 {% if site.talkyard_server_url %}
-<script>talkyardServerUrl='{{ site.talkyard_server_url }}';</script>
-<script async defer src="{{ site.talkyard_script_url }}"></script>
-<!-- You can specify a per page discussion id on the next line, if your URLs might change. -->
-<div class="talkyard-comments" data-discussion-id="{{ page.discussion_id }}" style="margin-top: 45px;">
-<noscript>Please enable Javascript to view comments.</noscript>
+<div id="comments-container" style="margin-top: 45px; min-height: 100px;">
+  <div id="comments-placeholder" style="padding: 20px; text-align: center; color: #666;">
+    <p>Loading comments...</p>
+  </div>
+  <div id="talkyard-comments-wrapper" style="display: none;">
+    <div class="talkyard-comments" data-discussion-id="{{ page.discussion_id }}">
+      <noscript>Please enable Javascript to view comments.</noscript>
+    </div>
+  </div>
 </div>
+
+<script>
+(function() {
+  var commentsLoaded = false;
+  var commentsContainer = document.getElementById('comments-container');
+  var placeholder = document.getElementById('comments-placeholder');
+  var wrapper = document.getElementById('talkyard-comments-wrapper');
+  
+  function loadComments() {
+    if (commentsLoaded) return;
+    commentsLoaded = true;
+    
+    if (window.performance && window.performance.mark) {
+      performance.mark('comments-load-start');
+    }
+    
+    window.talkyardServerUrl = '{{ site.talkyard_server_url }}';
+    
+    var script = document.createElement('script');
+    script.src = '{{ site.talkyard_script_url }}';
+    script.async = true;
+    script.defer = true;
+    script.onload = function() {
+      placeholder.style.display = 'none';
+      wrapper.style.display = 'block';
+      
+      if (window.performance && window.performance.mark) {
+        performance.mark('comments-load-end');
+        performance.measure('comments-load-time', 'comments-load-start', 'comments-load-end');
+      }
+    };
+    script.onerror = function() {
+      placeholder.innerHTML = '<p style="color: #999;">Comments could not be loaded. Please check your connection.</p>';
+    };
+    document.head.appendChild(script);
+  }
+  
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          loadComments();
+          observer.disconnect();
+        }
+      });
+    }, {
+      rootMargin: '200px'
+    });
+    
+    observer.observe(commentsContainer);
+  } else {
+    setTimeout(loadComments, 2000);
+  }
+})();
+</script>
 {% endif %}

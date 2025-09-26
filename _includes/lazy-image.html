@@ -1,0 +1,94 @@
+{% comment %}
+Lazy loading image component with native loading="lazy" and IntersectionObserver fallback
+Usage: {% include lazy-image.html src="/path/to/image.jpg" alt="Description" %}
+Optional parameters: class, width, height
+{% endcomment %}
+
+{% assign image_src = include.src %}
+{% assign image_alt = include.alt | default: "" %}
+{% assign image_class = include.class | default: "" %}
+{% assign image_width = include.width %}
+{% assign image_height = include.height %}
+
+<div class="lazy-image-wrapper" style="position: relative; overflow: hidden;">
+  <img 
+    data-src="{{ image_src | relative_url }}"
+    alt="{{ image_alt }}"
+    class="lazy-image {{ image_class }}"
+    loading="lazy"
+    {% if image_width %}width="{{ image_width }}"{% endif %}
+    {% if image_height %}height="{{ image_height }}"{% endif %}
+    style="display: block; width: 100%; height: auto;"
+  />
+  <noscript>
+    <img 
+      src="{{ image_src | relative_url }}"
+      alt="{{ image_alt }}"
+      class="{{ image_class }}"
+      {% if image_width %}width="{{ image_width }}"{% endif %}
+      {% if image_height %}height="{{ image_height }}"{% endif %}
+      style="display: block; width: 100%; height: auto;"
+    />
+  </noscript>
+</div>
+
+<script>
+(function() {
+  if (!window.lazyImageObserver) {
+    window.lazyImageObserver = {
+      init: function() {
+        var images = document.querySelectorAll('img.lazy-image[data-src]');
+        
+        if ('loading' in HTMLImageElement.prototype) {
+          images.forEach(function(img) {
+            if (!img.src && img.dataset.src) {
+              img.src = img.dataset.src;
+              img.classList.add('lazy-loaded');
+              
+              if (window.performance && window.performance.mark) {
+                performance.mark('image-loaded');
+              }
+            }
+          });
+        } else if ('IntersectionObserver' in window) {
+          var imageObserver = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(function(entry) {
+              if (entry.isIntersecting) {
+                var img = entry.target;
+                if (img.dataset.src) {
+                  img.src = img.dataset.src;
+                  img.classList.add('lazy-loaded');
+                  observer.unobserve(img);
+                  
+                  if (window.performance && window.performance.mark) {
+                    performance.mark('image-loaded');
+                  }
+                }
+              }
+            });
+          }, {
+            rootMargin: '50px'
+          });
+          
+          images.forEach(function(img) {
+            imageObserver.observe(img);
+          });
+        } else {
+          images.forEach(function(img) {
+            if (img.dataset.src) {
+              img.src = img.dataset.src;
+              img.classList.add('lazy-loaded');
+            }
+          });
+        }
+      }
+    };
+    
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', window.lazyImageObserver.init);
+    } else {
+      window.lazyImageObserver.init();
+    }
+  }
+})();
+</script>
