@@ -33,7 +33,7 @@ a greeting to other old boys. *It's our thing.*
 
 Then I stumbled on this video.
 
-{% include youtube.html id="h0zjusJ1-QM" %}
+{% include youtube.html youtube_id="h0zjusJ1-QM" %}
 Why were these old, white men singing our school song? Strange.
 
 The title and comments sent me down a rabbit hole that ruined everything.
