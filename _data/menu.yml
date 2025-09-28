@@ -3,7 +3,7 @@ entries:
     post_list:
       limit: 5
       show_more: true
-      show_more_text: See archive...
+      show_more_text: Archive
       show_more_url: /archive/
   - title: about
     url: /about/
