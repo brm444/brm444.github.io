@@ -6,13 +6,20 @@ Import WordPress comments to Talkyard in smaller batches
 import json
 import requests
 import time
+import base64
+import os
 
-def import_batch(data_type, data, talkyard_url):
+def import_batch(data_type, data, talkyard_url, api_secret):
     """Import a specific type of data"""
+    
+    # Construct Authorization header using the provided API secret
+    # Format: tyid=2:{api_secret} encoded in Base64
+    auth_string = f"tyid=2:{api_secret}"
+    auth_b64 = base64.b64encode(auth_string.encode('utf-8')).decode('utf-8')
     
     headers = {
         'Content-Type': 'application/json',
-        'Authorization': 'Basic dHlpZD0yOjExc3g2cWNpZThvZWNlbWdoNDlhZ3JmbXVm'
+        'Authorization': f'Basic {auth_b64}'
     }
     
     api_url = f"{talkyard_url}/-/v0/upsert"
@@ -38,6 +45,14 @@ def import_batch(data_type, data, talkyard_url):
         return False
 
 def main():
+    # IMPORTANT: Set your API secret via environment variable for security:
+    # export TALKYARD_API_SECRET="your-secret-here"
+    API_SECRET = os.getenv("TALKYARD_API_SECRET", "")
+    if not API_SECRET:
+        print("❌ Error: TALKYARD_API_SECRET environment variable not set!")
+        print("Set it with: export TALKYARD_API_SECRET='your-secret-here'")
+        return
+    
     TALKYARD_URL = "https://site-1hamqpkqkr.talkyard.net"
     JSON_FILE = "talkyard_comments_import.json"
     
@@ -52,12 +67,12 @@ def main():
     
     # 1. Import users
     if data.get('users'):
-        success &= import_batch('users', data['users'], TALKYARD_URL)
+        success &= import_batch('users', data['users'], TALKYARD_URL, API_SECRET)
         time.sleep(2)  # Wait between requests
     
     # 2. Import pages
     if data.get('pages'):
-        success &= import_batch('pages', data['pages'], TALKYARD_URL)
+        success &= import_batch('pages', data['pages'], TALKYARD_URL, API_SECRET)
         time.sleep(2)
     
     # 3. Import posts in smaller batches of 5
@@ -70,7 +85,7 @@ def main():
             batch_num = (i // batch_size) + 1
             print(f"\n--- Batch {batch_num} ---")
             
-            success &= import_batch('posts', batch, TALKYARD_URL)
+            success &= import_batch('posts', batch, TALKYARD_URL, API_SECRET)
             time.sleep(2)  # Wait between batches
     
     if success:

@@ -7,6 +7,7 @@ import json
 import requests
 import sys
 import time
+import base64
 from datetime import datetime
 
 def fix_talkyard_ids(data):
@@ -87,10 +88,14 @@ def import_to_talkyard(json_file_path, api_secret, talkyard_url):
     # API endpoint
     api_url = f"{talkyard_url}/-/v0/upsert"
     
-    # Headers - Using Basic Auth as provided by Talkyard
+    # Construct Authorization header using the provided API secret
+    # Format: tyid=2:{api_secret} encoded in Base64
+    auth_string = f"tyid=2:{api_secret}"
+    auth_b64 = base64.b64encode(auth_string.encode('utf-8')).decode('utf-8')
+    
     headers = {
         'Content-Type': 'application/json',
-        'Authorization': 'Basic dHlpZD0yOjExc3g2cWNpZThvZWNlbWdoNDlhZ3JmbXVm'
+        'Authorization': f'Basic {auth_b64}'
     }
     
     print(f"Importing {len(data['posts'])} posts from {len(data['users'])} users...")
@@ -119,8 +124,16 @@ def main():
     """
     
     # Configuration
+    # IMPORTANT: Set your API secret via environment variable for security:
+    # export TALKYARD_API_SECRET="your-secret-here"
+    # Or update the value below (not recommended for production)
+    import os
     TALKYARD_URL = "https://site-1hamqpkqkr.talkyard.net"
-    API_SECRET = "11sx6qcie8oecemgh49agrfmuf"  # Using provided API secret
+    API_SECRET = os.getenv("TALKYARD_API_SECRET", "")  # Read from environment variable
+    if not API_SECRET:
+        print("❌ Error: TALKYARD_API_SECRET environment variable not set!")
+        print("Set it with: export TALKYARD_API_SECRET='your-secret-here'")
+        sys.exit(1)
     JSON_FILE = "talkyard_comments_import.json"
     
     print("🚀 Starting Talkyard import...")

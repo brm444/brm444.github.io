@@ -7,6 +7,8 @@ Using the page mappings provided by Talkyard admin
 import json
 import requests
 import time
+import base64
+import os
 
 def create_targeted_import_data():
     """Create import data targeting existing Talkyard pages"""
@@ -115,6 +117,14 @@ def create_targeted_import_data():
 def import_to_existing_pages():
     """Import comments to existing Talkyard pages"""
     
+    # IMPORTANT: Set your API secret via environment variable for security:
+    # export TALKYARD_API_SECRET="your-secret-here"
+    API_SECRET = os.getenv("TALKYARD_API_SECRET", "")
+    if not API_SECRET:
+        print("❌ Error: TALKYARD_API_SECRET environment variable not set!")
+        print("Set it with: export TALKYARD_API_SECRET='your-secret-here'")
+        return
+    
     TALKYARD_URL = "https://site-1hamqpkqkr.talkyard.net"
     
     # Create targeted import data
@@ -122,10 +132,14 @@ def import_to_existing_pages():
     
     print(f"Importing {len(import_data['posts'])} posts from {len(import_data['users'])} users to existing pages...")
     
-    # Headers using Basic Auth
+    # Construct Authorization header using the provided API secret
+    # Format: tyid=2:{api_secret} encoded in Base64
+    auth_string = f"tyid=2:{API_SECRET}"
+    auth_b64 = base64.b64encode(auth_string.encode('utf-8')).decode('utf-8')
+    
     headers = {
         'Content-Type': 'application/json',
-        'Authorization': 'Basic dHlpZD0yOjExc3g2cWNpZThvZWNlbWdoNDlhZ3JmbXVm'
+        'Authorization': f'Basic {auth_b64}'
     }
     
     # Try importing users first
