@@ -42,7 +42,7 @@ Queen Mary's Grammar School, Walsall, was founded in 1554, before the first
 Europeans visited Africa. Like King's College, it also has accomplished alumni.
 And like Kings' College Lagos, the same school song.
 
-![School songs comparison](/uploads/2021/01/school-songs.png)
+![School songs comparison](/assets/images/posts/school-songs.png)
 
 King's College Lagos on the left, Queen Mary's on the right
 
@@ -54,7 +54,7 @@ Looking back, it should have been obvious. The first line of the KC version is
 "Floreat Collegium, shall our motto be", but our actual motto is "Spero
 Lucem" (we hope for light).
 
-![School motto](/uploads/2021/01/image.jpeg)
+![School motto](/assets/images/posts/image.jpeg)
 
 "Spero Lucem" shall our motto be doesn't quite have the same ring to it
 

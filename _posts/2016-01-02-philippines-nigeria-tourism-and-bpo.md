@@ -18,7 +18,7 @@ a perpetually gridlocked, densely populated city that has grown organically with
 apparently zero urban planning. Unlike Lagos, however, Manila has regular
 electricity. That's not the only thing the Philippines has over Nigeria.
 
-![Manila at night](/uploads/2016/01/manila-night.jpeg)
+![Manila at night](/assets/images/posts/manila-night.jpeg)
 
 Manila at night from a few thousand feet
 
@@ -28,7 +28,7 @@ Philippines is an archipelago made up of over 7,000 islands so it's not
 surprising that they have great beaches. Of all the beaches, few are more
 popular than Boracay, a 45-minute plane ride from Manila.
 
-![Boracay beach](/uploads/2016/01/boracay-beach.jpeg)
+![Boracay beach](/assets/images/posts/boracay-beach.jpeg)
 
 Sand and palm trees in Boracay, Philippines
 

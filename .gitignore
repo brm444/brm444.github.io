@@ -25,3 +25,10 @@ favicon_old.*
 backup/
 talkyard/
 vendor/
+
+# Migration artifacts
+migration-archive/
+*.tar.gz
+
+# Old uploads directory (migrated to assets/images/posts/)
+uploads/
