@@ -7,7 +7,7 @@ discussion_id: 2025-10-30-format-is-as-important-as-content
 comments: true
 ---
 
-# Format is as important as Content
+# Format is as important as content
 
 
 
