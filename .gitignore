@@ -20,3 +20,8 @@ yarn-error.log*
 favicon_old.*
 *.swp
 *.tmp
+
+# Large directories
+backup/
+talkyard/
+vendor/
