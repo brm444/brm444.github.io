@@ -5,23 +5,6 @@
 
 @import "{{ site.theme }}";
 
-/* Accessibility: Skip to content link */
-.skip-to-content {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background: #551a8b;
-  color: white;
-  padding: 8px;
-  text-decoration: none;
-  border-radius: 0 0 4px 0;
-}
-
-.skip-to-content:focus {
-  top: 0;
-  z-index: 100;
-}
-
 /* Post layout styles */
 .post-back-link {
   color: #551a8b;

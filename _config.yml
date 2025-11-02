@@ -50,9 +50,7 @@ talkyard_server_url: https://comments-for-makanju-org.talkyard.net
 talkyard_script_url: https://c1.ty-cdn.net/-/talkyard-comments.min.js
 
 # Google Analytics 4 Measurement ID
-# IMPORTANT: Replace with your actual GA4 Measurement ID from Google Analytics admin
-# Format: G-XXXXXXXXXX (e.g., G-1234567890)
-google_analytics: G-XXXXXXXXXX
+google_analytics: G-PSJ6Z121KK
 
 # Performance optimizations
 sass:
