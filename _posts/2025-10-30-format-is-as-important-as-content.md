@@ -2,7 +2,7 @@
 layout: post
 author:
   - Bankole
-title: "Format is as important as Content"
+title: "Format is as important as content"
 discussion_id: 2025-10-30-format-is-as-important-as-content
 comments: true
 ---
