@@ -27,10 +27,15 @@ facebook:
   admin: ""
 include:
     - _pages
+    - sw.js
+    - manifest.json
+    - offline.html
+    - icons
 plugins:
     - jekyll-feed
     - jekyll-paginate
     - jekyll-seo-tag
+    - jekyll-sitemap
     - jemoji
     - jekyll-remote-theme
     # - jektex  # Requires Ruby >= 2.7.0
@@ -43,7 +48,11 @@ exclude:
     - .bundle/
 talkyard_server_url: https://comments-for-makanju-org.talkyard.net
 talkyard_script_url: https://c1.ty-cdn.net/-/talkyard-comments.min.js
-google_analytics: UA-160597721-1
+
+# Google Analytics 4 Measurement ID
+# IMPORTANT: Replace with your actual GA4 Measurement ID from Google Analytics admin
+# Format: G-XXXXXXXXXX (e.g., G-1234567890)
+google_analytics: G-XXXXXXXXXX
 
 # Performance optimizations
 sass:

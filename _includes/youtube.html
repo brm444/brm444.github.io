@@ -1,6 +1,11 @@
 <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 2em auto;">
-  <iframe src="https://www.youtube.com/embed/{{include.youtube_id}}?rel=0&modestbranding=1&showinfo=0"
-          frameborder="0"
-          allowfullscreen
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+  <iframe
+    src="https://www.youtube.com/embed/{{include.youtube_id}}?rel=0&modestbranding=1&showinfo=0"
+    frameborder="0"
+    allowfullscreen
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    title="{% if include.title %}{{ include.title }}{% else %}YouTube video player{% endif %}"
+    aria-label="{% if include.title %}{{ include.title }}{% else %}Embedded video content{% endif %}"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+  </iframe>
 </div>

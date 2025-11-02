@@ -1,9 +1,11 @@
 ---
-categories: []
-date: '2020-12-28 17:31:00 '
 layout: post
-tags: []
-title: My wishlist (not predictions!) for African tech in 2021
+author:
+  - Bankole
+title: "My wishlist (not predictions!) for African tech in 2021"
+date: 2020-12-28
+discussion_id: 2020-12-28-africatech-wishlist
+comments: true
 ---
 
 \n

@@ -1,0 +1,255 @@
+---
+# Jekyll will process this file and convert it to CSS
+# The custom CSS below will override and extend the theme styles
+---
+
+@import "{{ site.theme }}";
+
+/* Accessibility: Skip to content link */
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #551a8b;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 0 0 4px 0;
+}
+
+.skip-to-content:focus {
+  top: 0;
+  z-index: 100;
+}
+
+/* Post layout styles */
+.post-back-link {
+  color: #551a8b;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.post-back-link-bottom {
+  color: #551a8b;
+  text-decoration: underline;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.post-header {
+  margin-bottom: 30px;
+}
+
+.post-title {
+  /* Title inherits from theme */
+}
+
+.post-meta {
+  text-align: left;
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+
+.post-divider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 30px 0;
+}
+
+.post-content {
+  margin-top: 30px;
+}
+
+/* Social media buttons styles */
+.social-links-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  text-decoration: none;
+  border: 0;
+  width: 36px;
+  height: 36px;
+  padding: 2px;
+  margin: 5px;
+  color: #0f1011;
+  border-radius: 35%;
+  background-color: #e7eff7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.social-link:hover {
+  background-color: #d4e0f0;
+}
+
+.social-link svg {
+  display: block;
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+}
+
+/* Contact form styles */
+.contact-form {
+  max-width: 500px;
+}
+
+.honeypot-field {
+  position: absolute;
+  left: -5000px;
+  opacity: 0;
+}
+
+.contact-fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-legend {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.form-textarea {
+  resize: vertical;
+}
+
+.form-help-text {
+  display: block;
+  color: #666;
+  margin-top: 4px;
+  font-size: 0.9em;
+}
+
+.form-button {
+  background-color: #0066cc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.form-button:hover {
+  background-color: #0052a3;
+}
+
+.form-button:focus {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+}
+
+/* Image gallery styles */
+.image-gallery {
+  overflow: auto;
+  margin-left: -1% !important;
+  list-style: none;
+  padding: 0;
+}
+
+.image-gallery li {
+  float: left;
+  display: block;
+  margin: 0 0 1% 1%;
+  width: 19%;
+}
+
+.image-gallery li a {
+  text-align: center;
+  text-decoration: none !important;
+  color: #777;
+  display: block;
+}
+
+.image-gallery li a span {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 3px 0;
+}
+
+.image-gallery li a img {
+  width: 100%;
+  display: block;
+}
+
+/* Lazy image wrapper */
+.lazy-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.lazy-image-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Comments container styling */
+.post-comments {
+  margin-top: 45px;
+}
+
+.comments-container {
+  margin-top: 45px;
+  min-height: 100px;
+}
+
+.comments-title {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.comments-placeholder {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+}
+
+.comments-wrapper {
+  display: none;
+}
+
+.comments-wrapper.visible {
+  display: block;
+}
+
+.noscript-message {
+  color: #d9534f;
+  padding: 10px;
+  border: 1px solid #d9534f;
+  border-radius: 4px;
+}

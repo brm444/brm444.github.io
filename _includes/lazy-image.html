@@ -1,7 +1,31 @@
 {% comment %}
-Lazy loading image component with native loading="lazy" and IntersectionObserver fallback
-Usage: {% include lazy-image.html src="/path/to/image.jpg" alt="Description" %}
-Optional parameters: class, width, height
+Enhanced lazy loading image component with WebP support and responsive images
+Features:
+- WebP format with JPEG fallback using <picture> element
+- Responsive images with srcset (1920w, 1280w, 640w)
+- Native loading="lazy" with IntersectionObserver fallback
+- Width/height attributes to prevent CLS (Cumulative Layout Shift)
+- Progressive enhancement approach
+
+Usage: {% include lazy-image.html src="/path/to/image.jpg" alt="Description" width="1920" height="1080" %}
+
+Required parameters:
+  src: Path to the image file (without extension)
+  alt: Alternative text for accessibility (REQUIRED - provide descriptive alt text)
+       Example: "Aerial view of Manhattan skyline at dusk with illuminated buildings"
+  width: Image width in pixels (for aspect ratio calculation)
+  height: Image height in pixels (for aspect ratio calculation)
+
+Optional parameters:
+  class: Additional CSS classes
+  sizes: Custom sizes attribute (default: "(max-width: 640px) 640px, (max-width: 1280px) 1280px, 1920px")
+
+Accessibility Guidelines:
+- Alt text must be descriptive and meaningful
+- For decorative images, use empty alt text: alt=""
+- For complex images (charts, diagrams), provide detailed descriptions in surrounding text
+- Avoid starting alt text with "image of" or "picture of"
+- Keep alt text concise but informative (typically 125 characters or less)
 {% endcomment %}
 
 {% assign image_src = include.src %}
@@ -10,25 +34,66 @@ Optional parameters: class, width, height
 {% assign image_width = include.width %}
 {% assign image_height = include.height %}
 
-<div class="lazy-image-wrapper" style="position: relative; overflow: hidden;">
-  <img 
-    data-src="{{ image_src | relative_url }}"
-    alt="{{ image_alt }}"
-    class="lazy-image {{ image_class }}"
-    loading="lazy"
-    {% if image_width %}width="{{ image_width }}"{% endif %}
-    {% if image_height %}height="{{ image_height }}"{% endif %}
-    style="display: block; width: 100%; height: auto;"
-  />
-  <noscript>
-    <img 
-      src="{{ image_src | relative_url }}"
+{% comment %}Extract filename without extension for responsive images{% endcomment %}
+{% assign src_parts = image_src | split: "." %}
+{% assign src_base = src_parts | first %}
+{% assign src_ext = src_parts | last %}
+
+{% comment %}Default sizes attribute if not provided{% endcomment %}
+{% assign image_sizes = include.sizes | default: "(max-width: 640px) 640px, (max-width: 1280px) 1280px, 1920px" %}
+
+<div class="lazy-image-wrapper">
+  <picture>
+    {% comment %}WebP sources with responsive sizes{% endcomment %}
+    <source
+      type="image/webp"
+      data-srcset="{{ src_base | relative_url }}-640w.webp 640w,
+                   {{ src_base | relative_url }}-1280w.webp 1280w,
+                   {{ src_base | relative_url }}-1920w.webp 1920w"
+      sizes="{{ image_sizes }}"
+    />
+
+    {% comment %}JPEG fallback with responsive sizes{% endcomment %}
+    <source
+      type="image/jpeg"
+      data-srcset="{{ src_base | relative_url }}-640w.jpg 640w,
+                   {{ src_base | relative_url }}-1280w.jpg 1280w,
+                   {{ src_base | relative_url }}-1920w.jpg 1920w"
+      sizes="{{ image_sizes }}"
+    />
+
+    {% comment %}Final fallback img tag{% endcomment %}
+    <img
+      data-src="{{ src_base | relative_url }}.{{ src_ext }}"
       alt="{{ image_alt }}"
-      class="{{ image_class }}"
+      class="lazy-image {{ image_class }}"
+      loading="lazy"
       {% if image_width %}width="{{ image_width }}"{% endif %}
       {% if image_height %}height="{{ image_height }}"{% endif %}
-      style="display: block; width: 100%; height: auto;"
     />
+  </picture>
+
+  <noscript>
+    <picture>
+      <source
+        type="image/webp"
+        srcset="{{ src_base | relative_url }}-640w.webp 640w,
+                {{ src_base | relative_url }}-1280w.webp 1280w,
+                {{ src_base | relative_url }}-1920w.webp 1920w"
+        sizes="{{ image_sizes }}"
+      />
+      <img
+        src="{{ src_base | relative_url }}.{{ src_ext }}"
+        srcset="{{ src_base | relative_url }}-640w.jpg 640w,
+                {{ src_base | relative_url }}-1280w.jpg 1280w,
+                {{ src_base | relative_url }}-1920w.jpg 1920w"
+        sizes="{{ image_sizes }}"
+        alt="{{ image_alt }}"
+        class="{{ image_class }}"
+        {% if image_width %}width="{{ image_width }}"{% endif %}
+        {% if image_height %}height="{{ image_height }}"{% endif %}
+      />
+    </picture>
   </noscript>
 </div>
 
@@ -38,52 +103,65 @@ Optional parameters: class, width, height
     window.lazyImageObserver = {
       init: function() {
         var images = document.querySelectorAll('img.lazy-image[data-src]');
-        
-        if ('loading' in HTMLImageElement.prototype) {
-          images.forEach(function(img) {
-            if (!img.src && img.dataset.src) {
-              img.src = img.dataset.src;
-              img.classList.add('lazy-loaded');
-              
-              if (window.performance && window.performance.mark) {
-                performance.mark('image-loaded');
+        var sources = document.querySelectorAll('source[data-srcset]');
+
+        // Function to load an image and its sources
+        var loadImage = function(img) {
+          // Load source elements first
+          var picture = img.closest('picture');
+          if (picture) {
+            var pictureSources = picture.querySelectorAll('source[data-srcset]');
+            pictureSources.forEach(function(source) {
+              if (source.dataset.srcset) {
+                source.srcset = source.dataset.srcset;
+                source.removeAttribute('data-srcset');
               }
+            });
+          }
+
+          // Load img element
+          if (img.dataset.src) {
+            img.src = img.dataset.src;
+            img.removeAttribute('data-src');
+            img.classList.add('lazy-loaded');
+
+            if (window.performance && window.performance.mark) {
+              performance.mark('image-loaded');
             }
+          }
+        };
+
+        if ('loading' in HTMLImageElement.prototype) {
+          // Native lazy loading support
+          images.forEach(function(img) {
+            loadImage(img);
           });
         } else if ('IntersectionObserver' in window) {
+          // IntersectionObserver fallback
           var imageObserver = new IntersectionObserver(function(entries, observer) {
             entries.forEach(function(entry) {
               if (entry.isIntersecting) {
                 var img = entry.target;
-                if (img.dataset.src) {
-                  img.src = img.dataset.src;
-                  img.classList.add('lazy-loaded');
-                  observer.unobserve(img);
-                  
-                  if (window.performance && window.performance.mark) {
-                    performance.mark('image-loaded');
-                  }
-                }
+                loadImage(img);
+                observer.unobserve(img);
               }
             });
           }, {
             rootMargin: '50px'
           });
-          
+
           images.forEach(function(img) {
             imageObserver.observe(img);
           });
         } else {
+          // Fallback for older browsers - load everything
           images.forEach(function(img) {
-            if (img.dataset.src) {
-              img.src = img.dataset.src;
-              img.classList.add('lazy-loaded');
-            }
+            loadImage(img);
           });
         }
       }
     };
-    
+
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', window.lazyImageObserver.init);
     } else {

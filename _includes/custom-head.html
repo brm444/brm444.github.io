@@ -1,12 +1,29 @@
+<!-- SEO and social media meta tags -->
+{%- include seo-meta.html -%}
+
 <!-- Favicon configuration -->
 <link rel="icon" type="image/png" href="{{ '/siteicon.png' | relative_url }}">
 <link rel="shortcut icon" type="image/png" href="{{ '/siteicon.png' | relative_url }}">
 <link rel="apple-touch-icon" href="{{ '/siteicon.png' | relative_url }}">
 
+<!-- PWA Configuration -->
+<link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
+<meta name="theme-color" content="#000000">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="bankole.org">
+
 <!-- Performance optimizations -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
-<link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+<!-- Font optimization -->
+<style>
+  @font-face {
+    font-display: swap;
+  }
+</style>
+<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+<link rel="dns-prefetch" href="https://www.googletagmanager.com">
 {% if site.talkyard_server_url %}
 <link rel="preconnect" href="{{ site.talkyard_server_url }}" crossorigin>
 <link rel="dns-prefetch" href="https://c1.ty-cdn.net">
@@ -42,6 +59,32 @@
     document.addEventListener('DOMContentLoaded', function() {
       performance.mark('dom-loaded');
       performance.measure('dom-load-time', 'head-start', 'dom-loaded');
+    });
+  }
+})();
+</script>
+<!-- Service Worker Registration (Production only) -->
+<script>
+(function() {
+  // Only register service worker in production (not localhost)
+  var isProduction = window.location.hostname !== 'localhost' &&
+                     window.location.hostname !== '127.0.0.1' &&
+                     window.location.protocol === 'https:';
+
+  if ('serviceWorker' in navigator && isProduction) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/sw.js')
+        .then(function(registration) {
+          console.log('ServiceWorker registered with scope:', registration.scope);
+
+          // Check for updates every hour
+          setInterval(function() {
+            registration.update();
+          }, 3600000);
+        })
+        .catch(function(error) {
+          console.log('ServiceWorker registration failed:', error);
+        });
     });
   }
 })();

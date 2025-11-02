@@ -1,0 +1,128 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  tests:
+    name: Run Tests and Validation
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Ruby 3.2
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.2
+          bundler-cache: true
+
+      - name: Set up Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Run performance tests
+        run: node tests/performance-tests.js
+
+      - name: Run asset validation
+        run: bash tests/validate-assets.sh
+
+      - name: Run markdown linting
+        run: npx markdownlint-cli2 "**/*.md" "#node_modules"
+
+      - name: Check for broken links
+        uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          use-quiet-mode: true
+          folder-path: '_posts,_pages'
+          file-extension: '.md'
+
+  build:
+    name: Build Jekyll Site
+    needs: tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Ruby 3.2
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.2
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll build --strict_front_matter
+        env:
+          JEKYLL_ENV: production
+
+      - name: Validate output
+        run: test -d _site && echo "Build successful"
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: jekyll-site
+          path: _site/
+          retention-days: 5
+
+  lighthouse:
+    name: Lighthouse Performance Audit
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: jekyll-site
+          path: _site/
+
+      - uses: treosh/lighthouse-ci-action@v10
+        with:
+          runs: 1
+          configPath: ./lighthouserc.json
+        continue-on-error: true
+
+  seo:
+    name: SEO and Accessibility
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: jekyll-site
+          path: _site/
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install axe
+        run: npm install -g @axe-core/cli
+
+      - name: Check accessibility
+        run: axe _site/index.html --exit || true
+        continue-on-error: true
+
+      - name: Validate meta tags
+        run: grep -q "charset" _site/index.html && echo "✓ Charset found"

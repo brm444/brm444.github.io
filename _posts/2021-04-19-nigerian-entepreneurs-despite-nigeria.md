@@ -15,7 +15,7 @@ dark continent, or the bright spot for opportunity.
 Today, Nigeria is in the incandescent phase aka "The future is so bright it
 burns my eyes".
 
-![African entrepreneurs](/assets/images/posts/image-1.png)
+![Diverse group of African entrepreneurs collaborating and working together in a modern office environment](/assets/images/posts/african-entrepreneurs.png)
 
 But why now? Headline acquisitions and fundraising are lagging indicators. The
 hard work of building a company worth acquiring happens well before TechCrunch.

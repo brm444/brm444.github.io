@@ -1,20 +1,22 @@
 <script>
   if (window.performance && window.performance.mark) {
-    performance.mark('analytics-load-start');
+    performance.mark("analytics-load-start");
   }
-  
-  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-  ga('create', '{{ site.google_analytics }}', 'auto');
-  ga('send', 'pageview');
-  
-  var gaScript = document.createElement('script');
-  gaScript.async = true;
-  gaScript.src = 'https://www.google-analytics.com/analytics.js';
-  gaScript.onload = function() {
+
+  // Google Analytics 4 (gtag.js) Configuration
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "{{ site.google_analytics }}");
+
+  var gtagScript = document.createElement("script");
+  gtagScript.async = true;
+  gtagScript.src = "https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}";
+  gtagScript.onload = function() {
     if (window.performance && window.performance.mark) {
-      performance.mark('analytics-load-end');
-      performance.measure('analytics-load-time', 'analytics-load-start', 'analytics-load-end');
+      performance.mark("analytics-load-end");
+      performance.measure("analytics-load-time", "analytics-load-start", "analytics-load-end");
     }
   };
-  document.head.appendChild(gaScript);
+  document.head.appendChild(gtagScript);
 </script>

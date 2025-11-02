@@ -1,27 +1,104 @@
 ---
 layout: default
 ---
-<div style="margin-bottom: 20px;">
-  <a href="{{ '/' | relative_url }}" style="color: #551a8b; text-decoration: underline;">← back</a>
+<!-- Prefetch next/previous posts for faster navigation -->
+{% if page.next %}
+  <link rel="prefetch" href="{{ page.next.url | relative_url }}">
+  <link rel="prerender" href="{{ page.next.url | relative_url }}">
+{% endif %}
+{% if page.previous %}
+  <link rel="prefetch" href="{{ page.previous.url | relative_url }}">
+  <link rel="prerender" href="{{ page.previous.url | relative_url }}">
+{% endif %}
+
+<!--
+  ACCESSIBILITY GUIDELINES:
+  - All images MUST have descriptive alt text
+  - Links should have clear, descriptive text (avoid "click here")
+  - Use semantic HTML elements (strong, em, h1-h6, etc.)
+  - Ensure good color contrast ratios (WCAG AA standard)
+  - Test keyboard navigation with Tab key
+  - Test with screen readers (NVDA, JAWS, or VoiceOver)
+
+  ALT TEXT BEST PRACTICES FOR IMAGES:
+
+  When adding images to posts, ALWAYS provide descriptive alt text:
+
+  ✅ GOOD: ![Students working in a computer lab at QMGS Walsall](image.jpg)
+  ❌ BAD:  ![Image](image.jpg) or ![Photo](image.jpg)
+
+  Tips for writing effective alt text:
+  - Describe what's in the image, not just the topic
+  - Be specific and concise (aim for 10-15 words)
+  - Don't start with "Image of..." or "Picture of..."
+  - Include relevant context that adds to the post
+  - For decorative images, use empty alt: ![](image.jpg)
+
+  Alt text helps:
+  - Screen reader users understand your content
+  - Search engines index your images properly
+  - Users when images fail to load
+-->
+
+{%- assign words = content | number_of_words -%}
+{%- assign reading_time = words | divided_by: 200 -%}
+{%- if reading_time == 0 -%}
+  {%- assign reading_time = 1 -%}
+{%- endif -%}
+
+<!-- Skip to content link for keyboard navigation -->
+<a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+<div class="post-back-link">
+  <a href="{{ '/' | relative_url }}">← back</a>
 </div>
 
-<article itemscope itemtype="https://schema.org/BlogPosting">
+<article id="main-content" itemscope itemtype="https://schema.org/Article">
+  <!-- Enhanced structured data for SEO -->
+  <meta itemprop="headline" content="{{ page.title | escape }}">
+  <meta itemprop="description" content="{{ page.excerpt | default: page.content | strip_html | truncatewords: 50 | escape }}">
+  <meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">
+  {%- if page.modified_date -%}
+    <meta itemprop="dateModified" content="{{ page.modified_date | date_to_xmlschema }}">
+  {%- else -%}
+    <meta itemprop="dateModified" content="{{ page.date | date_to_xmlschema }}">
+  {%- endif -%}
+  <meta itemprop="wordCount" content="{{ words }}">
+  <meta itemprop="timeRequired" content="PT{{ reading_time }}M">
 
-  <header class="post-header" style="margin-bottom: 30px;">
+  {%- if page.image -%}
+    <meta itemprop="image" content="{{ site.url }}{{ page.image | relative_url }}">
+  {%- endif -%}
+
+  <!-- Author information -->
+  <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+    <meta itemprop="name" content="{{ site.author.name }}">
+    <meta itemprop="url" content="{{ site.author.url }}">
+  </div>
+
+  <!-- Publisher information -->
+  <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+    <meta itemprop="name" content="{{ site.title }}">
+    <meta itemprop="url" content="{{ site.url }}">
+  </div>
+
+  <header class="post-header">
     {%- if page.title -%}
       <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     {%- endif -%}
-    <p class="post-meta" style="text-align: left; color: #666; font-size: 0.9em; margin-bottom: 20px;">
+    <p class="post-meta">
       {%- if page.date -%}
         <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
           {{ page.date | date: site.theme_config.date_format | default: "%b %-d, %Y" }}
         </time>
+        <span aria-hidden="true"> • </span>
+        <span>{{ reading_time }} min read</span>
       {%- endif -%}
     </p>
-    <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 30px 0;">
+    <hr class="post-divider">
   </header>
 
-  <div class="post-content e-content" itemprop="articleBody" style="margin-top: 30px;">
+  <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
 
@@ -36,6 +113,6 @@ layout: default
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
 
-<div style="margin-top: 40px; margin-bottom: 20px;">
-  <a href="{{ '/' | relative_url }}" style="color: #551a8b; text-decoration: underline;">← back</a>
+<div class="post-back-link-bottom">
+  <a href="{{ '/' | relative_url }}">← back</a>
 </div>

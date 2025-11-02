@@ -1,14 +1,15 @@
 {% if site.talkyard_server_url %}
-<div id="comments-container" style="margin-top: 45px; min-height: 100px;">
-  <div id="comments-placeholder" style="padding: 20px; text-align: center; color: #666;">
+<section id="comments-container" role="region" aria-label="Comments section" class="comments-container">
+  <h2 class="comments-title">Comments</h2>
+  <div id="comments-placeholder" class="comments-placeholder" aria-busy="true" aria-label="Loading comments, please wait">
     <p>Loading comments...</p>
   </div>
-  <div id="talkyard-comments-wrapper" style="display: none;">
-    <div class="talkyard-comments" data-discussion-id="{{ page.discussion_id }}">
-      <noscript>Please enable Javascript to view comments.</noscript>
+  <div id="talkyard-comments-wrapper" class="comments-wrapper" aria-busy="false">
+    <div class="talkyard-comments" data-discussion-id="{{ page.discussion_id }}" role="main">
+      <noscript><p class="noscript-message">Please enable Javascript to view comments.</p></noscript>
     </div>
   </div>
-</div>
+</section>
 
 <script>
 (function() {
@@ -31,10 +32,14 @@
     script.src = '{{ site.talkyard_script_url }}';
     script.async = true;
     script.defer = true;
+    // Security attributes for third-party script
+    script.setAttribute('crossorigin', 'anonymous');
     script.onload = function() {
       placeholder.style.display = 'none';
       wrapper.style.display = 'block';
-      
+      wrapper.removeAttribute('aria-busy');
+      placeholder.removeAttribute('aria-busy');
+
       if (window.performance && window.performance.mark) {
         performance.mark('comments-load-end');
         performance.measure('comments-load-time', 'comments-load-start', 'comments-load-end');
@@ -42,6 +47,7 @@
     };
     script.onerror = function() {
       placeholder.innerHTML = '<p style="color: #999;">Comments could not be loaded. Please check your connection.</p>';
+      console.error('Failed to load Talkyard comments script from: {{ site.talkyard_script_url }}');
     };
     document.head.appendChild(script);
   }
